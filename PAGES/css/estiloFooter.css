@@ -1,0 +1,14 @@
+#fondo{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 10%; 
+    width: 10%;
+    border: solid green;
+    float: left;
+}
+.logo{
+    width: 20%;
+    height: 15%;
+}
