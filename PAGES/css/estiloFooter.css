@@ -1,14 +1,42 @@
 #fondo{
+    
+    margin: 0%;
+    padding: 0%;
     align-items: center;
     display: flex;
-    justify-content: space-around;
-    background-color: black;
-    height: 10%; 
-    width: 10%;
-    border: solid green;
+    justify-content: space-between;
+   background-color: black;
+    height: 30em; 
+    width: 100%;
     float: left;
+    
+    
 }
 .logo{
-    width: 20%;
-    height: 15%;
+    width: 10rem;
+    height: 1 ;
+}
+/*colores del texto*/
+.p1{
+color: white;
+}
+.p2{
+    color: white;
+    }
+    .p3{
+        color: white;
+        }
+
+.icoFooter{
+    color: white;
+}
+.icoRedes{
+   
+    
+    align-items:stretch;
+    flex-direction: column;
+    float: left;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
 }
