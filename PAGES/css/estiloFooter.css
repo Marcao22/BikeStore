@@ -1,4 +1,5 @@
 #fondo{
+    
     margin: 0%;
     padding: 0%;
     align-items: center;
@@ -7,7 +8,6 @@
    background-color: black;
     height: 30em; 
     width: 100%;
-    border: solid green;
     float: left;
     
     
@@ -26,3 +26,17 @@ color: white;
     .p3{
         color: white;
         }
+
+.icoFooter{
+    color: white;
+}
+.icoRedes{
+   
+    
+    align-items:stretch;
+    flex-direction: column;
+    float: left;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
