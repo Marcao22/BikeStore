@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -13,22 +13,35 @@ body {
     height: 100%;
 }
 
+.columna {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: #1a1b27;
+
+    
+
+}
+
 
 .form {
     display: flex;
-    justify-content: center;
-    padding-top: 3rem;
+    justify-content: flex-end;
+    padding-top: 5rem;
+    margin-right: 5%;
 }
 
 .sub-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30vw;
+    width: 25%;
     height: 70vh;
     border-radius: 12px;
-    box-shadow: rgba(50, 50, 93, 0,25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(50, 50, 93, 0, 25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     background-color: white;
 }
 
@@ -89,7 +102,5 @@ button:hover {
 }
 
 .signup:hover {
-    opacity: 0.8
-    ;
+    opacity: 0.8;
 }
-
