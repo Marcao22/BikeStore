@@ -1,0 +1,21 @@
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+.navCarrito{
+  height: 30%;
+    width: 40%;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: black;
+
+
+}
+
+.imgBicicarrito{
+    width: 30%;
+    height: 20%;
+}
