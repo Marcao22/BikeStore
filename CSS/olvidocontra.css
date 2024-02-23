@@ -1,5 +1,12 @@
-
-    h2 { margin: 1.5rem 0 2rem 0; text-align: center; } 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Lato", sans-serif;
+text-decoration: none;
+}
+h2 { margin: 1.5rem 0 2rem 0; text-align: center; } 
 
 
     label { padding-left: 16px; opacity: 0.75; } 
@@ -28,12 +35,8 @@
              font-weight: 600; 
              width: 100%; } 
              body {background-image: url(/IMG/frame56\,57\,58.png);}
- *{ 
-    padding: 0; 
-    margin: 0; 
-    box-sizing: 
-    border-box; }
-   
+
+
 .forma { 
     display: flex;
     flex-direction: column;
@@ -57,9 +60,21 @@
 
 .columna{
     height: 100vh;
-    background-color: #0038fe50;
+    background-color: #00000070;
     width: 370px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    
 }
+.imgrd {
+    height: 300px;
+    width: 300px;
+}
+
+
 
 .upper-form{
     display: flex;
@@ -73,5 +88,15 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: 481px;
+    width: 589px;
+    background-color: white;
+    border-radius: 20px;
+
+}
+.texto {
+    
+    color: white;
+    font-size: 69px;
+    font-family: "";
 }
