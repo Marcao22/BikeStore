@@ -4,18 +4,25 @@
 
 }
 .navCarrito{
-  height: 30%;
-    width: 40%;
+  height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around ;
+    align-items: center;
 
-    background-color: black;
+   border: blue groove;
 
 
 }
 
 .imgBicicarrito{
-    width: 30%;
-    height: 20%;
+    width: 100%;
+    height: 100%;
+}
+.especificacionProducto{
+    color: black ;
 }
