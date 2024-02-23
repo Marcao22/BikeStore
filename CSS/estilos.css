@@ -126,3 +126,11 @@ nav ul li ul li a:hover{
     color: white;
     transform:scale(1.1);
 }
+
+
+estilo demas contenido 
+.homeImg{
+    width: 20%;
+    height: 50%;
+    flex-wrap: nowrap;
+}
