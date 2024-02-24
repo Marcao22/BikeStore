@@ -126,9 +126,17 @@ img {
     align-items: center;
 }
 .footer {
+
     width: 100%;
-    height: 4em;
+    height: 20em;
     background-color: black;
+    color: white;
+
+display: flex;
+justify-content:space-between;
+align-items:self-start;
+position:static;
+
 }
 
 
@@ -152,6 +160,74 @@ img {
     margin: 15px;
     background-color: aqua;
 }
+
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+
+}
+
+
+
+.txtinfoSitio{
+    
+flex-direction: column;
+
+}
+.txAyuda{
+    flex-direction: column;
+    
+    
+}
+.txtContactanos{
+    flex-direction: column;
+   
+}
+
+.icoFooter{
+    width: 100px;
+    height: 100px;
+}
+.iconoContacto{
+    
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    
+}
+.linkCorreo{
+    color: white;
+}
+.linkNosotros{
+    color: white;
+}
+.copyright{
+    background-color: #333333;
+color: white;
+    width: 100%;
+    height: 20px;
+
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+navar
+.navvarInicio{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+
+
+
 
 
 
