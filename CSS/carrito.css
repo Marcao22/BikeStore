@@ -1,28 +1,94 @@
+/*lb1*/
 *{
     margin: 0%;
     padding: 0%;
 
 }
-.navCarrito{
-  height: 100%;
-    width: 100%;
-    margin: 0%;
-    padding: 0%;
 
-
-    display: flex;
-    justify-content: space-around ;
+.Lb1{
     align-items: center;
-
-   border: blue groove;
-
-
-}
-
-.imgBicicarrito{
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
-.especificacionProducto{
-    color: black ;
+
+.container1{
+    justify-content: space-between;
+    display: flex;
+   
+}
+
+/*frame2*/
+.continer2{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+ 
+    width: 100%;
+    height: 10%;
+    
+}
+
+.imgC{
+    width: 10%;
+    height: 10%;
+}
+
+/*frame3*/
+.containerBtn{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.btnElininar{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.btnActualizar{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+}
+
+/*frame3*/
+.frame2{
+   display: flex;
+   justify-content: space-around
+
+}
+
+.aggNota{
+    height: 10em;
+    width: 40%;
+    background-color: #F0EFEF;
+    border-radius: 10px;
+}
+
+.detalleOrden{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.totalCarrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fondoTotal{
+    background-color: #F0EFEF;
+    border-radius: 10px;
+}
+
+.btnEnviar{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
 }
