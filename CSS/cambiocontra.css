@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Lato", sans-serif;
+text-decoration: none;
+}
+h2 { margin: 1.5rem 0 2rem 0; text-align: center; } 
+
+
+    label { padding-left: 16px; opacity: 0.75; } 
+
+
+    input { display: flex; 
+        border-radius: 50px; 
+        border-style: none; 
+        outline: none; 
+        margin-top: 8px; 
+        padding: 12px 24px; 
+        width: 250px;
+         background-color: #eaeeed; } 
+         
+         input:focus { opacity: 0.7; }
+         
+         button { 
+            padding: 12px 48px; 
+            border-radius: 50px; 
+            color: white; 
+            margin-top: 1rem; 
+            cursor: pointer;
+             outline: none; 
+             border-width: 0; 
+             background-color: #0038fe; 
+             font-weight: 600; 
+             width: 100%; } 
+             body {background-image: url(/IMG/frame56\,57\,58.png);}
+
+
+.forma { 
+    display: flex;
+    flex-direction: column;
+}
+.sub-forma{
+    display: flex;
+    justify-content: left;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 2%;
+    background-color: black;
+}
+.mayorC{
+    display: flex;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+}
+
+.columna{
+    height: 100vh;
+    background-color: #00000070;
+    width: 370px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+.imgrd {
+    height: 300px;
+    width: 300px;
+}
+
+
+
+.upper-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 370px);
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 481px;
+    width: 589px;
+    background-color: white;
+    border-radius: 20px;
+
+}
+.texto {
+    
+    color: white;
+    font-size: 69px;
+    font-family: "";
+}
