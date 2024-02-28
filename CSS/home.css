@@ -163,7 +163,7 @@ img {
 .title2{
     color: black;
     margin-bottom: 30px;
-    margin-right: 11em;
+    margin-right: 25em;
     font-size: 30px;
     display: flex;
     
@@ -180,7 +180,7 @@ img {
 
 .article {
     position: relative;
-    width: 80%;
+    width: 100%;
     height: 70vh;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -191,7 +191,7 @@ img {
 
 .article1 {
     position: relative;
-    width: 80%;
+    width: 100%;
     height: 120vh;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -209,7 +209,7 @@ img {
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
-    justify-content: space-between ;
+    justify-content: space-around;
     
 }
 
@@ -218,10 +218,12 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
+    
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     border: 1px solid black;
+    width: 20%;
+    height: 80%;
 }
 
 .box-galery1 {
@@ -271,7 +273,7 @@ img {
 .frase {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.699);
-    margin: 17%;
+    margin: 20%;
     color: rgb(252, 252, 252);
     display: flex;
     border-radius: 5px;
@@ -282,14 +284,14 @@ img {
 .frase1 {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.699);
-    margin: 40%;
+    margin: 44%;
     color: rgb(255, 255, 255);
     border-radius: 5px;
 }
 
 
 .bici {
-    height: 40vh;
+    height: 30vh;
 }
 
 .a{
