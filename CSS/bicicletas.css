@@ -71,3 +71,15 @@ body {
 }
 
 
+.filtros {
+    width: 300px; /* Ajusta el ancho del panel lateral según sea necesario */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+.contenedor2{
+    display: flex;
+    padding: 200px;
+}
