@@ -9,7 +9,6 @@ body {
     height: auto;
     margin: 0;
     padding: 0;
-    border-radius: 0% 0% 60% 70% 10;
   }
 
   .texto-superpuesto{
@@ -69,5 +68,6 @@ body {
 .bicicleta button:hover {
     background-color: #0056b3;
 }
+
 
 
