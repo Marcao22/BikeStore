@@ -124,8 +124,7 @@
 display: flex;
 justify-content:space-between;
 align-items:flex-start;
-
-
+bottom: 0;
 
 
 
@@ -179,4 +178,7 @@ color: white;
     justify-content: center;
     display: flex;
     align-items: center;
+    position: relative;
 }
+
+    
