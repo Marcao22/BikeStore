@@ -1,14 +1,15 @@
-/*navbar*/
-
 
 
 
 /*lb1*/
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
+   
 
 }
+
+
 
 .Lb1{
     align-items: center;
@@ -33,6 +34,22 @@
     height: 10%;
     
 }
+.aggNota{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+   
+}
+
+textarea{
+    resize: none;
+    background-color: #F0EFEF;
+
+     border-radius: 1%;
+     border: none;
+}
+
 .increCarrito{
     margin:2% 2%;
     display: flex;
@@ -58,33 +75,34 @@
     margin: 10px;
 }
 
+.estiloTotal{
+    margin: 10%;
+}
 .btnElininar{
     background-color: black;
     color: white;
     border-radius: 5px;
-    height: 30px;
+    height: 50px;
+    width: 10%;
+
 }
 
 .btnActualizar{
     background-color: black;
     color: white;
     border-radius: 5px;
-    height: 30px;
+    height: 50px;
+    width: 8%;
 }
 
 /*frame3*/
 .frame2{
    display: flex;
-   justify-content: space-around
-
+   justify-content: space-around;
+   align-items: center;
 }
 
-.aggNota{
-    height: 10em;
-    width: 40%;
-    background-color: #F0EFEF;
-    border-radius: 10px;
-}
+
 
 .detalleOrden{
     display: flex;
@@ -97,32 +115,43 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
 .fondoTotal{
+    
     background-color: #F0EFEF;
     border-radius: 10px;
+    
+     width: 300px;
+    height: 200px;
+
+    display: flex;
+justify-content: center;
+flex-direction: column;
+align-items:center ;
+
+   
+   
 }
+
 
 .btnEnviar{
     background-color: black;
     color: white;
     border-radius: 5px;
-    height: 30px;
+    height: 50px;
+    width: 80%;
 }
 
-.espacioCarrito{
-    height: 100%;
-    width: 2em;
 
-}
 
 /*footer*/
 
 
 #fondo{
     width: 100%;
-    height: 19em;
+    height: 300px;
     background-color: black;
     color: white;
 
@@ -183,7 +212,5 @@ color: white;
     justify-content: center;
     display: flex;
     align-items: center;
-    position: relative;
-}
 
-    
+}
