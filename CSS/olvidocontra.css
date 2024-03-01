@@ -8,7 +8,6 @@
     font-family: "Lato", sans-serif;
     text-decoration: none;
 }
-<<<<<<< Updated upstream
 
 body {
     background-image: url(../IMG/frame56\,57\,58.png);
@@ -20,8 +19,6 @@ body {
     }
 
 h2 { margin: 1rem 0 2rem 0; text-align: center; } 
-=======
->>>>>>> Stashed changes
 
 h2 {
     margin: 1.5rem 0 2rem 0;
@@ -44,7 +41,6 @@ input {
     background-color: #eaeeed;
 }
 
-<<<<<<< Updated upstream
     input { display: flex; 
         border-radius: 50px; 
         border-style: none; 
@@ -70,11 +66,6 @@ input {
              width: 100%; 
              box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);} 
              
-=======
-input:focus {
-    opacity: 0.7;
-}
->>>>>>> Stashed changes
 
 button {
     padding: 12px 48px;
@@ -100,27 +91,10 @@ body {
     flex-direction: column;
 }
 
-<<<<<<< Updated upstream
 
 
 .main{
     flex-wrap: wrap;
-=======
-.sub-forma {
-    display: flex;
-    justify-content: left;
-    width: 50vw;
-    height: 50vh;
-    border-radius: 2%;
-    background-color: black;
-}
-
-.mayorC {
-    display: flex;
-}
-
-.main {
->>>>>>> Stashed changes
     display: flex;
     align-items: center;
 }
@@ -152,18 +126,22 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    width: 380px; /* Ancho fijo */
-    height: 400px; /* Altura adaptable al contenido */
+    width: 400px; /* Ancho fijo */
+    height: 500px; /* Altura adaptable al contenido */
     background-color: white;
     border-radius: 20px;
-<<<<<<< Updated upstream
     position: fixed; /* Cambiar de posición absoluta a fija */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: auto;
     
-=======
->>>>>>> Stashed changes
+}
+.alineartext {
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    flex-direction: column;
 }
 
 .texto {
@@ -172,7 +150,6 @@ body {
     font-family: "";
 }
 
-<<<<<<< Updated upstream
 .signup {
     padding-left: 5px;
     text-decoration: none;
@@ -187,23 +164,3 @@ body {
     padding: 30px;
 }
  
-=======
-@media only screen and (max-width: 600px) {
-    .sub-forma {
-        width: 100%;
-    }
-
-    .formulario {
-        width: 100%;
-    }
-
-    input {
-        width: 80%;
-    }
-
-    button {
-        width: 80%;
-    }
-    
-}
->>>>>>> Stashed changes

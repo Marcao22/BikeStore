@@ -92,8 +92,8 @@ h2 { margin: 1rem 0 2rem 0; text-align: center; }
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    width: 400px; /* Ancho fijo */
-    height: 400px; /* Altura adaptable al contenido */
+    width: 300px; /* Ancho fijo */
+    height: 500px; /* Altura adaptable al contenido */
     background-color: white;
     border-radius: 20px;
     position: fixed; /* Cambiar de posición absoluta a fija */
