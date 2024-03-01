@@ -1,12 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: "Lato", sans-serif;
-text-decoration: none;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
 }
+<<<<<<< Updated upstream
 
 body {
     background-image: url(../IMG/frame56\,57\,58.png);
@@ -18,11 +20,31 @@ body {
     }
 
 h2 { margin: 1rem 0 2rem 0; text-align: center; } 
+=======
+>>>>>>> Stashed changes
 
+h2 {
+    margin: 1.5rem 0 2rem 0;
+    text-align: center;
+}
 
-    label { padding-left: 16px; opacity: 0.75; } 
+label {
+    padding-left: 16px;
+    opacity: 0.75;
+}
 
+input {
+    display: flex;
+    border-radius: 50px;
+    border-style: none;
+    outline: none;
+    margin-top: 8px;
+    padding: 12px 24px;
+    width: 250px;
+    background-color: #eaeeed;
+}
 
+<<<<<<< Updated upstream
     input { display: flex; 
         border-radius: 50px; 
         border-style: none; 
@@ -48,22 +70,62 @@ h2 { margin: 1rem 0 2rem 0; text-align: center; }
              width: 100%; 
              box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);} 
              
+=======
+input:focus {
+    opacity: 0.7;
+}
+>>>>>>> Stashed changes
 
+button {
+    padding: 12px 48px;
+    border-radius: 50px;
+    color: white;
+    margin-top: 1rem;
+    cursor: pointer;
+    outline: none;
+    border-width: 0;
+    background-color: #0038fe;
+    font-weight: 600;
+    width: 100%;
+}
 
-.forma { 
+body {
+    background-image: url(/IMG/frame56\,57\,58.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.forma {
     display: flex;
     flex-direction: column;
 }
 
+<<<<<<< Updated upstream
 
 
 .main{
     flex-wrap: wrap;
+=======
+.sub-forma {
+    display: flex;
+    justify-content: left;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 2%;
+    background-color: black;
+}
+
+.mayorC {
+    display: flex;
+}
+
+.main {
+>>>>>>> Stashed changes
     display: flex;
     align-items: center;
 }
 
-.columna{
+.columna {
     height: 100vh;
     background-color: #00000070;
     width: 370px;
@@ -71,17 +133,14 @@ h2 { margin: 1rem 0 2rem 0; text-align: center; }
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-
-    
 }
+
 .imgrd {
     height: 300px;
     width: 300px;
 }
 
-
-
-.upper-form{
+.upper-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,19 +156,23 @@ h2 { margin: 1rem 0 2rem 0; text-align: center; }
     height: 400px; /* Altura adaptable al contenido */
     background-color: white;
     border-radius: 20px;
+<<<<<<< Updated upstream
     position: fixed; /* Cambiar de posición absoluta a fija */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     
+=======
+>>>>>>> Stashed changes
 }
+
 .texto {
-    
     color: white;
     font-size: 69px;
     font-family: "";
 }
 
+<<<<<<< Updated upstream
 .signup {
     padding-left: 5px;
     text-decoration: none;
@@ -124,3 +187,23 @@ h2 { margin: 1rem 0 2rem 0; text-align: center; }
     padding: 30px;
 }
  
+=======
+@media only screen and (max-width: 600px) {
+    .sub-forma {
+        width: 100%;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    button {
+        width: 80%;
+    }
+    
+}
+>>>>>>> Stashed changes
