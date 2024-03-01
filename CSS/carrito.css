@@ -188,8 +188,8 @@ flex-direction: column;
 }
 .iconoContacto{
     
-    width: 40px;
-    height: 40px;
+    width: 2vh;
+    height: 5vhpx;
 
     display: flex;
     justify-content:space-evenly;
@@ -213,4 +213,43 @@ color: white;
     display: flex;
     align-items: center;
 
+}
+
+
+/* Estilos responsive */
+/* Estilos responsive */
+@media only screen and (max-width:550px) {
+    #fondo {
+        flex-direction: column; /* Cambia a disposición de columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos en pantallas pequeñas */
+        text-align: center; /* Alinea el texto al centro en pantallas pequeñas */
+        height: 100%;
+        margin: 0;
+        
+    }
+
+    .txtinfoSitio{
+        margin-bottom: 20px; 
+    }
+     .txtAyuda{
+        margin-bottom: 20px; 
+     }
+      .txtContactanos {
+        margin-bottom: 20px; /* Añade espacio entre las columnas */
+    }
+    
+        .imgF{
+    display: none;
+    }
+    .copyright{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .frame2{
+        flex-direction: column;
+    }
+
+    
 }
