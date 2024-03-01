@@ -1,17 +1,7 @@
-
-
 body {
-    background-image: url(../IMG/contactanos.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh;
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 0; 
-    padding: 0; 
-
-}
-
+    margin: 0;
+    padding: 0;
+  }
 /* Navbar */
 .header {
 
@@ -80,66 +70,84 @@ body {
 .menu:hover {
     background-color: blue;
 }
-/**Formulario**/
-.container {
+  .imagen_bici{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .texto-superpuesto{
+    position: absolute;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 5vw; /* Tamaño de fuente relativo al ancho del viewport */
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    height: 50vh;
+    max-height: 100%; 
+  }
+  
+  .catalogo {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding: 0 80px;
-}
-
-.formulario {
-    background-color: #0000009a;
+    flex-wrap: wrap;
     padding: 50px;
-    margin: 30px;
-    border-radius: 20px;
-    width: 320px;
-    color: rgb(255, 255, 255); 
-    
 }
 
-/* Establece el color del texto de las etiquetas y los inputs dentro del formulario como negro */
-.formulario input, .formulario textarea{
-    color: black;
+
+.bicicleta {
+    max-width: 100%;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
 }
 
-button {
-    width: 30%;
-    background-color: #001aff;
-    color: #fff;
+.bicicleta img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bicicleta h2 {
+    margin-top: 10px;
+}
+
+.bicicleta p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.bicicleta button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
     border: none;
+    border-radius: 10px;
     cursor: pointer;
-    margin: 10px;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
+.bicicleta button:hover {
     background-color: #0056b3;
 }
-.formulario h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
 
-form {
-    display: flex;
-    flex-direction: column;
-}
 
-label {
-    margin-bottom: 10px;
-}
-
-input, button {
-    
-    margin-bottom: 10px;
+.filtros {
+    width: 300px; 
+    padding: 15px;
     border-radius: 10px;
-    padding: 10px;
-}
-.container button {
-    margin: 30px auto; /* Margen superior e inferior automático y centrado horizontal */
-    
+    text-align: center;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
 }
 
-
-
+.contenedor2{
+    display: flex;
+    padding: 200px;
+}

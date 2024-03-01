@@ -246,3 +246,20 @@ button:hover {
     opacity: 0.8;
 }
 */
+@media only screen and (max-width: 767px) {
+    body {
+      width: 100%; 
+      padding: 0 20px; 
+    }
+    
+    }
+
+  /* Estilos para pantallas pequeñas */
+  @media only screen and (max-width: 480px) {
+      body{
+          width: 100%;  
+      padding: 10px;
+      }
+      
+        
+    }
