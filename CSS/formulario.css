@@ -1,27 +1,107 @@
 *{
-padding: 0;
-margin: 0;
-}
-
-.header {
-    width: 100%;
-    height: 6em;
+    padding: 0;
+    margin: 0;
     
-    background-color:rgb(0, 0, 0);
-    display: flex;
-    justify-content:baseline;
-
 }
-
-.conFormulario{
+.Formulario{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+   
+
+}
+
+.imgFomulario{
+    width: 90px;
+    height: 90px;
+}
+
+
+.navbarFormulario{
+    width: 100%;
+    height: 150px;
+    background: black;
+    display: flex;
+    justify-content:flex-start;
+    align-items: first center;
+}
+
+.conMayorFor{
+   
+    margin-bottom: 80px;
+    border-radius: 10px;
+    width: 100%;
+    height: 10vh;
+    
+}
+.contFomulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 75px;
+   
+   
+    
+    
+   
+
+}
+.contVerificar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin:10px;
+}
+.campo{
+    border-radius: 5px;
+    width: 250px;
+    height: 20px;
+    margin: 10px;
+    border: none;
+    border: groove rgb(229, 209, 209);
+    border-radius: 20px;
+    
     
 
 }
 
 
-.camposFor{
-    flex-direction: column;
+.BtnFinalizar{
+    border-radius: 5px;
+    width: 250px;
+    height: 30px; 
+    background: blue;
+    
+
+    
 }
+.camopoFinalizar,.BtnFinalizar{
+    margin: 25px;
+}
+.estiloDepar{
+    color:rgb(125, 124, 124);
+}
+.linkFinalizar{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+@media (max-width:465px){
+    .conMayorFor{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+        
+       
+        
+
+}
+

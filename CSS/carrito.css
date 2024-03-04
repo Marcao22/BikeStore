@@ -1,86 +1,116 @@
+/*Navbar*/
+
 
 
 /*CONTENIDO CSS CARRITO
 lb1*/
-*{
+* {
     margin: 0;
     padding: 0;
-   
+
 
 }
 
 
 
-.Lb1{
+.Lb1 {
     align-items: center;
     height: 100%;
     width: 100%;
 }
 
-.container1{
-    justify-content:space-between;
+.container1 {
+    justify-content: space-between;
     display: flex;
-   
+
 }
 
 /*frame2*/
-.continer2{
+.continer2 {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-  
- 
+
+
     width: 100%;
     height: 10%;
+
+}
+.btnEnviar1{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+
+
+}
+
+.btnEnviar2{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+}
+
+
+
+.estiloNone{
+    text-decoration: none;
+    color: white;
     
 }
-.aggNota{
+
+.aggNota {
     width: 40%;
     height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column ;
-   
+    flex-direction: column;
+
 }
 
-textarea{
+textarea {
     resize: none;
     background-color: #F0EFEF;
 
-     border-radius: 1%;
-     border: none;
+    border-radius: 1%;
+    border: none;
 }
 
-.increCarrito{
-    margin:2% 2%;
+.increCarrito {
+    margin: 2% 2%;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 
 
 }
 
-.imgC{
+.imgC {
     width: 12%;
     height: 20%;
 }
-.frame2{
+
+.frame2 {
     margin: 5%;
 }
 
 
 /*frame3*/
-.containerBtn{
+.containerBtn {
     display: flex;
     justify-content: space-between;
     margin: 10px;
 }
 
-.estiloTotal{
+.estiloTotal {
     margin: 10%;
 }
-.btnElininar{
+
+.btnElininar {
     background-color: black;
     color: white;
     border-radius: 5px;
@@ -89,56 +119,56 @@ textarea{
 
 }
 
-.btnActualizar{
+.btnActualizar {
     background-color: black;
     color: white;
     border-radius: 5px;
     height: 50px;
-    width: 8%;
+    width: 10%;
 }
 
 /*frame3*/
-.frame2{
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
+.frame2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
 
-.detalleOrden{
+.detalleOrden {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.totalCarrito{
+.totalCarrito {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
 }
 
-.fondoTotal{
-    
+.fondoTotal {
+
     background-color: #F0EFEF;
     border-radius: 10px;
-    
-     width: 300px;
+
+    width: 300px;
     height: 200px;
 
     display: flex;
-justify-content: center;
-flex-direction: column;
-align-items:center ;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
-   
-   
+
+
 }
 
 
-.btnEnviar{
+.btnEnviar {
     background-color: black;
     color: white;
     border-radius: 5px;
@@ -147,70 +177,79 @@ align-items:center ;
 }
 
 
-#fondo{
+#fondo {
     width: 100%;
     height: 20em;
     background-color: black;
     color: white;
 
-display: flex;
-justify-content:space-between;
-align-items:first baseline;
-position:static;
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+    position: static;
 
 
 
 
 }
-.increCarrito{
-        margin:2% 2%;
-        display: flex;
-        justify-content: center; /* Centrar horizontalmente los botones */
-        align-items: center; /* Centrar verticalmente los botones */
-    
-    
-}
 
-
-.txtinfoSitio{
-    
-flex-direction: column;
+.increCarrito {
+    margin: 2% 2%;
+    display: flex;
+    justify-content: center;
+    /* Centrar horizontalmente los botones */
+    align-items: center;
+    /* Centrar verticalmente los botones */
 
 
 }
-.txAyuda{
+
+
+.txtinfoSitio {
+
     flex-direction: column;
-    
-    
-}
-.txtContactanos{
-    flex-direction: column;
-   
+
+
 }
 
-.icoFooter{
+.txAyuda {
+    flex-direction: column;
+
+
+}
+
+.txtContactanos {
+    flex-direction: column;
+
+}
+
+.icoFooter {
     width: 100px;
     height: 100px;
 }
-.iconoContacto{
-    
+
+.iconoContacto {
+
     width: 40px;
     height: 40px;
 
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    
+
 }
-.linkCorreo{
+
+.linkCorreo {
     color: white;
 }
-.linkNosotros{
+
+.linkNosotros {
     color: white;
 }
-.copyright{
+
+.copyright {
     background-color: #333333;
-color: white;
+    color: white;
     width: 100%;
     height: 20px;
 
@@ -224,94 +263,103 @@ color: white;
 
 /* Estilos responsive */
 @media(max-width:850px) {
-     textarea{
+
+    textarea {
         width: 200px;
         height: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-       
+
 
 
     }
-    #fondo{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    Flex-direction: column;
-    
-    }
-    .imgnone{
-    display:none;
-    }
-    
-    
 
-    .continer2{
+    #fondo {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        Flex-direction: column;
+
+    }
+
+    .imgnone {
+        display: none;
+    }
+
+
+
+    .continer2 {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        
+
 
     }
-    .containerBtn{
+
+    .containerBtn {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        
-    }
-   
-    
 
-    .container1{
+    }
+
+
+
+    .container1 {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        
+
     }
 
-    .txtinfoSitio,.txtContactanos,.txtAyuda{
-        margin-bottom: 25px; 
-       
+    .txtinfoSitio,
+    .txtContactanos,
+    .txtAyuda {
+        margin-bottom: 25px;
+
     }
-    .txtinfoSitio{
+
+    .txtinfoSitio {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         margin-top: 20px;
     }
-    .txtAyuda{
+
+    .txtAyuda {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
-    .txtContactanos{
+
+    .txtContactanos {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
-    
-    
-    
-    .copyright{
+
+
+
+    .copyright {
         align-items: center;
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
 
-    .frame2{
+    .frame2 {
         flex-direction: column;
     }
 
-    
+
 }

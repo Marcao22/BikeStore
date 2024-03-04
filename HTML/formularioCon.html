@@ -1,35 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/CSS/formulario.css">
+    <link rel="stylesheet" href="/css/formulario.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario para contraentrega</title>
 </head>
 <body>
-
-    <header class="header">
-        <img src="../IMG/logobikestore.png" alt="BIKE STORE" class="logo">
-        
-    </header>
-    <H2>PAGO CONTRAENTREGA EN TODA COLOMBIA</H2>
-
-    <nav class="conFormulario">
-
-<div class="camposFor">
-<input type="text" placeholder="Numero de cedula">
-<input type="text" placeholder="Nombre completo">
-<input type="text" placeholder="Numero de telefono">
-<input type="text" placeholder="Direccio">
-<input type="text" placeholder="Barrio">
-<input type="text" placeholder="Departamento">     
-<input type="text" placeholder="Cuidad">
-
-    </div>
-        </nav>
-
-
-
     
+<section class="Formulario">
+
+<nav class="navbarFormulario">
+
+
+
+    <img src="/IMG/logo.png" alt="" class="imgFomulario">
+
+
+</nav>
+
+<div class="txtFormulario"><h2 >PAGO CONTRAENTREGA EN TODA COLOMBIA</h2></div> 
+
+<div class="conMayorFor">
+<div class="contFomulario">
+<input class="campo" type="text" placeholder="Cedula">
+<input class="campo" type="text" placeholder="Nombres">
+<input class="campo" type="text" placeholder="apellidos">
+<input class="campo" type="text" placeholder="Numero telefonico">
+<input class="campo" type="text" placeholder="Correo electronico">
+<input class="campo" type="text" placeholder="Direcccion">
+<input class="campo" type="text" placeholder="Cuidad">
+<!--ejemplo de una lista desplegable-->
+<div class="campo">
+   <label for="Departamento" class="estiloDepar">Departamento</label>
+<select name="" id="Departamento">
+<option value="">Valle del cauca</option>
+<option value="">Magdalena</option>
+<option value="">Sucre</option>
+<option value="">Nariño</option>
+<option value="">Vupes</option>
+
+</select> 
+</div>
+
+
+<!--<input class="campo" type="text" placeholder="Departamento">-->
+
+
+<div class="contVerificar"><input  type="checkbox" checked  >Solo pagare en el momento de la entrega</div>
+
+<button type="button" class="BtnFinalizar" ><a href="" class="linkFinalizar">Finalizar</a></button>
+
+</div>
+
+</div>
+
+
+
+</section>
+
+
 </body>
 </html>
