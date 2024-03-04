@@ -11,12 +11,15 @@
     display: flex;
     justify-content: space-between;
     align-items: start;
-    padding: 20px; /* Añade relleno para separar el contenido del borde */
-    
+    padding: 20px;
+    /* Añade relleno para separar el contenido del borde */
+
 }
 
 /* Cada columna */
-.txtinfoSitio, .txtAyuda, .txtContactanos {
+.txtinfoSitio,
+.txtAyuda,
+.txtContactanos {
     flex-direction: column;
 }
 
@@ -33,24 +36,31 @@
     flex-wrap: wrap;
 }
 
-.linkCorreo, .linkNosotros {
+.linkCorreo,
+.linkNosotros {
     color: white;
 }
 
 /* Estilos responsive */
 @media only screen and (max-width: 768px) {
     #fondo {
-        flex-direction: column; /* Cambia a disposición de columna en pantallas pequeñas */
-        align-items: center; /* Centra los elementos en pantallas pequeñas */
-        text-align: center; /* Alinea el texto al centro en pantallas pequeñas */
+        flex-direction: column;
+        /* Cambia a disposición de columna en pantallas pequeñas */
+        align-items: center;
+        /* Centra los elementos en pantallas pequeñas */
+        text-align: center;
+        /* Alinea el texto al centro en pantallas pequeñas */
     }
 
-    .txtinfoSitio, .txtAyuda, .txtContactanos {
-        margin-bottom: 20px; /* Añade espacio entre las columnas */
+    .txtinfoSitio,
+    .txtAyuda,
+    .txtContactanos {
+        margin-bottom: 20px;
+        /* Añade espacio entre las columnas */
     }
 }
 
-.copyright{
+.copyright {
     background-color: #333333;
     color: white;
     width: 100%;

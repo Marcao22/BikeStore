@@ -1,17 +1,17 @@
 
-document.querySelector("#btnRestar").addEventListener("click",restarUno);
-document.querySelector("#btnSumar").addEventListener("click",sumarUno);
+document.querySelector("#btnRestar").addEventListener("click", restarUno);
+document.querySelector("#btnSumar").addEventListener("click", sumarUno);
 
-let contador=0;
+let contador = 0;
 
-function restarUno(){
+function restarUno() {
     if (contador > 0)
-    contador= contador-1;
+        contador = contador - 1;
     document.querySelector("#msgContador").innerHTML = contador
 }
 
-function sumarUno(){
-    contador= contador+1;
+function sumarUno() {
+    contador = contador + 1;
     document.querySelector("#msgContador").innerHTML = contador
 
 }
