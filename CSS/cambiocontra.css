@@ -11,8 +11,7 @@ body {
     background-image: url(../IMG/frame56\,57\,58.png);
     background-repeat: no-repeat;
      background-position: center center;
-    height: 1800px;
-    background-attachment:fixed ;
+    height: 100vh;
     background-size: cover;
     }
 
@@ -44,14 +43,8 @@ h2 { margin: 1rem 0 2rem 0; text-align: center; }
              border-width: 0; 
              background-color: #0038fe; 
              font-weight: 600; 
-<<<<<<< HEAD
              width: 100%; } 
              body {background-image: url(../IMG/frame56\,57\,58.png);}
-=======
-             width: 100%; 
-             box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);} 
-             
->>>>>>> ff06e06e075f560b4121bb95cf22d55251436bd6
 
 
 .forma { 
@@ -121,4 +114,10 @@ h2 { margin: 1rem 0 2rem 0; text-align: center; }
     align-items: center;
     padding: 30px;
 }
- 
+
+@media (max-width: 1025px){
+    .columna{
+        display: none;
+    }
+  
+}
