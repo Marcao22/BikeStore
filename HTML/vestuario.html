@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vestuario</title>
     <link rel="stylesheet" href="../CSS/vestuario.css">
     <link rel="stylesheet" href="../CSS/estiloFooter.css">
-    
+
 </head>
+
 <body>
 
 
     <div class="contenedor">
-        <img src="../IMG/vestuario1.png"  class="imagen_bici">
+        <img src="../IMG/vestuario1.png" class="imagen_bici">
         <div class="texto-superpuesto">VESTUARIO</div>
-      </div>
+    </div>
 
-      
 
-   
-      <div class="contenedor2">
+
+
+    <div class="contenedor2">
         <div class="cuadro">
             <h2>Categorías</h2>
             <input type="checkbox" id="ruta" value="Bicicletas De Ruta">
@@ -28,11 +30,11 @@
             <label for="urbana">Bicicletas Urbanas</label><br>
             <input type="checkbox" id="montana" value="Bicicletas De Montaña">
             <label for="montana">Bicicletas De Montaña</label><br>
-            
+
             <h2>Etiquetas</h2>
             <input type="checkbox" id="outlet" value="Outlet">
             <label for="outlet">Outlet</label><br>
-            
+
             <h2>Marca</h2>
             <input type="checkbox" id="bmc" value="BMC">
             <label for="bmc">BMC</label><br>
@@ -40,158 +42,171 @@
             <label for="scott">Scott</label><br>
             <input type="checkbox" id="specialized" value="Specialized">
             <label for="specialized">Specialized</label><br>
-            
+
             <h2>Precio</h2>
-            <label  for="minPrice">Min:</label>
+            <label for="minPrice">Min:</label>
             <input type="number" id="minPrice" min="10" max="50"><br>
             <label for="maxPrice">Max:</label>
             <input type="number" id="maxPrice" min="10" max="50">
-            
-            
-            
+
+
+
             <button onclick="filtrar()">Filtrar</button>
         </div>
 
-      <div class="catalogo">
-        
-        <div class="bicicleta"data-categoria="Bicicletas De Ruta" data-marca="BMC" data-precio="400">
-            <img src="../IMG/vestuario.png" alt="vestuario 1">
-            <h2>Bicicleta de Montaña</h2>
-            <p> $300</p>
-            <button>Comprar</button>
-        </div>
-        <div class="bicicleta">
-            <img src="../IMG/vestuario.png" alt="vestuario 2">
-            <h2>Bicicleta de Carretera</h2>
-            <p> $400</p>
-            <button>Comprar</button>
-        </div>
+        <div class="catalogo">
 
-        <div class="bicicleta">
-            <img src="../IMG/vestuario.png" alt="vestuario 3">
-            <h2>Bicicleta de Carretera</h2>
-            <p> $400</p>
-            <button>Comprar</button>
-        </div>
+            <div class="bicicleta" data-categoria="Bicicletas De Ruta" data-marca="BMC" data-precio="400">
+                <img src="../IMG/vestuario.png" alt="vestuario 1">
+                <h2>Bicicleta de Montaña</h2>
+                <p> $300</p>
+                <button>Comprar</button>
+            </div>
+            <div class="bicicleta">
+                <img src="../IMG/vestuario.png" alt="vestuario 2">
+                <h2>Bicicleta de Carretera</h2>
+                <p> $400</p>
+                <button>Comprar</button>
+            </div>
 
-        <div class="bicicleta">
-            <img src="../IMG/vestuario.png" alt="vestuario 4">
-            <h2>Bicicleta de Carretera</h2>
-            <p> $400</p>
-            <button>Comprar</button>
-        </div>
+            <div class="bicicleta">
+                <img src="../IMG/vestuario.png" alt="vestuario 3">
+                <h2>Bicicleta de Carretera</h2>
+                <p> $400</p>
+                <button>Comprar</button>
+            </div>
 
-        <div class="bicicleta">
-            <img src="../IMG/vestuario.png" alt="vestuario 5">
-            <h2>Bicicleta de Carretera</h2>
-            <p> $400</p>
-            <button>Comprar</button>
-        </div>
+            <div class="bicicleta">
+                <img src="../IMG/vestuario.png" alt="vestuario 4">
+                <h2>Bicicleta de Carretera</h2>
+                <p> $400</p>
+                <button>Comprar</button>
+            </div>
 
-        <div class="bicicleta">
-            <img src="../IMG/vestuario.png" alt="vestuario 6">
-            <h2>Bicicleta de Carretera</h2>
-            <p> $400</p>
-            <button>Comprar</button>
-        </div>
-        <div class="bicicleta">
-            <img src="../IMG/vestuario.png" alt="vestuario 7">
-            <h2>Bicicleta de Carretera</h2>
-            <p> $400</p>
-            <button>Comprar</button>
+            <div class="bicicleta">
+                <img src="../IMG/vestuario.png" alt="vestuario 5">
+                <h2>Bicicleta de Carretera</h2>
+                <p> $400</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="bicicleta">
+                <img src="../IMG/vestuario.png" alt="vestuario 6">
+                <h2>Bicicleta de Carretera</h2>
+                <p> $400</p>
+                <button>Comprar</button>
+            </div>
+            <div class="bicicleta">
+                <img src="../IMG/vestuario.png" alt="vestuario 7">
+                <h2>Bicicleta de Carretera</h2>
+                <p> $400</p>
+                <button>Comprar</button>
+            </div>
+
         </div>
 
     </div>
+    <script>
+        function filtrar() {
+            // Obtener valores de los filtros
+            var categorias = [];
+            document.querySelectorAll('input[type="checkbox"]:checked').forEach(function (checkbox) {
+                categorias.push(checkbox.value);
+            });
+            var marcaSeleccionada = document.querySelector('input[name="Marca"]:checked');
+            var precioMin = parseFloat(document.getElementById('minPrice').value);
+            var precioMax = parseFloat(document.getElementById('maxPrice').value);
 
-</div>
-<script>
-    function filtrar() {
-        // Obtener valores de los filtros
-        var categorias = [];
-        document.querySelectorAll('input[type="checkbox"]:checked').forEach(function (checkbox) {
-            categorias.push(checkbox.value);
-        });
-        var marcaSeleccionada = document.querySelector('input[name="Marca"]:checked');
-        var precioMin = parseFloat(document.getElementById('minPrice').value);
-        var precioMax = parseFloat(document.getElementById('maxPrice').value);
+            // Filtrar elementos del catálogo
+            var bicicletas = document.querySelectorAll('.bicicleta');
+            bicicletas.forEach(function (bicicleta) {
+                var categoria = bicicleta.getAttribute('data-categoria');
+                var marca = bicicleta.getAttribute('data-marca');
+                var precio = parseFloat(bicicleta.getAttribute('data-precio'));
 
-        // Filtrar elementos del catálogo
-        var bicicletas = document.querySelectorAll('.bicicleta');
-        bicicletas.forEach(function(bicicleta) {
-            var categoria = bicicleta.getAttribute('data-categoria');
-            var marca = bicicleta.getAttribute('data-marca');
-            var precio = parseFloat(bicicleta.getAttribute('data-precio'));
+                var categoriaMatch = categorias.length === 0 || categorias.includes(categoria);
+                var marcaMatch = !marcaSeleccionada || marca === marcaSeleccionada.value;
+                var precioMatch = isNaN(precioMin) || isNaN(precioMax) || (precio >= precioMin && precio <= precioMax);
 
-            var categoriaMatch = categorias.length === 0 || categorias.includes(categoria);
-            var marcaMatch = !marcaSeleccionada || marca === marcaSeleccionada.value;
-            var precioMatch = isNaN(precioMin) || isNaN(precioMax) || (precio >= precioMin && precio <= precioMax);
-
-            if (categoriaMatch && marcaMatch && precioMatch) {
-                bicicleta.style.display = 'block'; // Mostrar la bicicleta
-            } else {
-                bicicleta.style.display = 'none'; // Ocultar la bicicleta
-            }
-        });
-    }
-</script>
+                if (categoriaMatch && marcaMatch && precioMatch) {
+                    bicicleta.style.display = 'block'; // Mostrar la bicicleta
+                } else {
+                    bicicleta.style.display = 'none'; // Ocultar la bicicleta
+                }
+            });
+        }
+    </script>
 
 
 </body>
+
 </html>
-       <!--footer-->
-    <footer id="fondo">
+<!--footer-->
+<footer id="fondo">
 
-        <img class="icoFooter" src="../IMG/logo.png" alt="">
-      
-        <div class="iconoContacto"><img src="/IMG/iconoCorreoFooter.png" alt="">
-            <a class="linkCorreo" href="">infobikestore@gmail.com</a>
-                <img src="/IMG/iconoCelularFooter.png" alt="">
-                    <p>+57 322 5547865</p></div>
-      
-        <div class="txtinfoSitio"> <p class="p1"><H2>Info sitio:</H2></p1>
-            <p class="p1">Terminos y Condiciones Promocion Actual</p1>
-                <p class="p1">Terminos y Condiciones Devoluciones</p1>
-                    <p class="p1">Terminos y Condiciones Plan Separe</p1>
-                        <p class="p1">Terminos y Condiciones Creditos ADDI</p1>
-                            <p class="p1">Politica Tratamiento de Datos</p1>
-                                <p class="p1">Politica de Privacidad</p1>
-                                    <p class="p1">Metodos de financiacion </p1>
-                                        <p class="p1">Terminos y Condiciones</p1>
-                                            <p class="p1"></p1>Derecho de Retracto
-                                                <p class="p1">SIC</p1>
-                                                    <p class="p1">Trabaja Con Nosotros</p1>
-                                                        <p class="p1">¿Quieres Ser Distribuidor?</p1>
-      </div>
-        
-        <div class="txtAyuda"><p class="p1"><H2>Ayuda:</H2></p1>
-            <p class="p1">Cambios y Devoluciones</p1>
-      <p class="p1">Garantia</p1>
+    <img class="icoFooter" src="../IMG/logo.png" alt="">
+
+    <div class="iconoContacto"><img src="/IMG/iconoCorreoFooter.png" alt="">
+        <a class="linkCorreo" href="">infobikestore@gmail.com</a>
+        <img src="/IMG/iconoCelularFooter.png" alt="">
+        <p>+57 322 5547865</p>
+    </div>
+
+    <div class="txtinfoSitio">
+        <p class="p1">
+        <H2>Info sitio:</H2>
+        </p1>
+        <p class="p1">Terminos y Condiciones Promocion Actual</p1>
+        <p class="p1">Terminos y Condiciones Devoluciones</p1>
+        <p class="p1">Terminos y Condiciones Plan Separe</p1>
+        <p class="p1">Terminos y Condiciones Creditos ADDI</p1>
+        <p class="p1">Politica Tratamiento de Datos</p1>
+        <p class="p1">Politica de Privacidad</p1>
+        <p class="p1">Metodos de financiacion </p1>
+        <p class="p1">Terminos y Condiciones</p1>
+        <p class="p1">
+            </p1>Derecho de Retracto
+        <p class="p1">SIC</p1>
+        <p class="p1">Trabaja Con Nosotros</p1>
+        <p class="p1">¿Quieres Ser Distribuidor?</p1>
+    </div>
+
+    <div class="txtAyuda">
+        <p class="p1">
+        <H2>Ayuda:</H2>
+        </p1>
+        <p class="p1">Cambios y Devoluciones</p1>
+        <p class="p1">Garantia</p1>
         <p class="p1">Terminos y Condiciones Garantia Dinamic</p1>
-            <p class="p1">Contacto</p1>
-                <p class="p1">Preguntas Frecuentes</p1>
-                    <p class="p1">Politica de Envios</p1>
-                        <p class="p1">Guia de Tallas Bicicletas</p1>
-                            <p class="p1">Tiendas</p1>
-                                <p class="p1">Politicas del Crash Replacement</p1>
-                                    <p class="p1">Terminos del Servicio</p1>
-                                        <p class="p1">Politica del Rembolso</p1>
-        </div>
-      
-        <div class="txtContactanos"><p class="p1"><H2>Contactanos:</H2></p>
-            <p class="p1"><a class="linkNosotros" href="">Nosotros</a></p>
-      
-                <p class="p1">Responsabilidad Social</p>
-            </div>
-      
-      
-      
-      </footer>
-      <nav class="copyright">
-      <p><i> Copyright © BikeStore. Todos los Derechos Reservados</i></p>
-      </nav>
-      
-   
-      
-      
+        <p class="p1">Contacto</p1>
+        <p class="p1">Preguntas Frecuentes</p1>
+        <p class="p1">Politica de Envios</p1>
+        <p class="p1">Guia de Tallas Bicicletas</p1>
+        <p class="p1">Tiendas</p1>
+        <p class="p1">Politicas del Crash Replacement</p1>
+        <p class="p1">Terminos del Servicio</p1>
+        <p class="p1">Politica del Rembolso</p1>
+    </div>
+
+    <div class="txtContactanos">
+        <p class="p1">
+        <H2>Contactanos:</H2>
+        </p>
+        <p class="p1"><a class="linkNosotros" href="">Nosotros</a></p>
+
+        <p class="p1">Responsabilidad Social</p>
+    </div>
+
+
+
+</footer>
+<nav class="copyright">
+    <p><i> Copyright © BikeStore. Todos los Derechos Reservados</i></p>
+</nav>
+
+
+
+
 </body>
+
 </html>
