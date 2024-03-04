@@ -1,7 +1,7 @@
 
 
 /*CONTENIDO CSS CARRITO
-lb1
+lb1*/
 *{
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@ lb1
    
 }
 
-frame2
+/*frame2*/
 .continer2{
     display: flex;
     justify-content:space-between;
@@ -35,6 +35,8 @@ frame2
     
 }
 .aggNota{
+    width: 40%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,7 +70,7 @@ textarea{
 }
 
 
-frame3
+/*frame3*/
 .containerBtn{
     display: flex;
     justify-content: space-between;
@@ -95,7 +97,7 @@ frame3
     width: 8%;
 }
 
-frame3
+/*frame3*/
 .frame2{
    display: flex;
    justify-content: space-around;
@@ -145,30 +147,34 @@ align-items:center ;
 }
 
 
-
-footer
-
-
 #fondo{
     width: 100%;
-    height: 300px;
+    height: 20em;
     background-color: black;
     color: white;
 
 display: flex;
 justify-content:space-between;
-align-items:flex-start;
-bottom: 0;
+align-items:first baseline;
+position:static;
+
 
 
 
 }
+.increCarrito{
+        margin:2% 2%;
+        display: flex;
+        justify-content: center; /* Centrar horizontalmente los botones */
+        align-items: center; /* Centrar verticalmente los botones */
+    
+    
+}
 
 
 .txtinfoSitio{
- 
+    
 flex-direction: column;
-
 
 
 }
@@ -188,13 +194,12 @@ flex-direction: column;
 }
 .iconoContacto{
     
-    width: 2vh;
-    height: 5vhpx;
+    width: 40px;
+    height: 40px;
 
     display: flex;
     justify-content:space-evenly;
     flex-wrap: wrap;
-   
     
 }
 .linkCorreo{
@@ -212,37 +217,93 @@ color: white;
     justify-content: center;
     display: flex;
     align-items: center;
-
 }
-*/
+
+
 
 
 /* Estilos responsive */
-/* Estilos responsive */
-@media only screen and (max-width:550px) {
-    #fondo {
-        flex-direction: column; /* Cambia a disposición de columna en pantallas pequeñas */
-        align-items: center; /* Centra los elementos en pantallas pequeñas */
-        text-align: center; /* Alinea el texto al centro en pantallas pequeñas */
-        height: 100%;
-        margin: 0;
+@media(max-width:850px) {
+     textarea{
+        width: 200px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+       
+
+
+    }
+    #fondo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    Flex-direction: column;
+    
+    }
+    .imgnone{
+    display:none;
+    }
+    
+    
+
+    .continer2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+
+    }
+    .containerBtn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+   
+    
+
+    .container1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         
     }
 
-    .txtinfoSitio{
-        margin-bottom: 20px; 
+    .txtinfoSitio,.txtContactanos,.txtAyuda{
+        margin-bottom: 25px; 
+       
     }
-     .txtAyuda{
-        margin-bottom: 20px; 
-     }
-      .txtContactanos {
-        margin-bottom: 20px; /* Añade espacio entre las columnas */
+    .txtinfoSitio{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .txtAyuda{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .txtContactanos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
     
-        .imgF{
-    display: none;
-    }
+    
+    
     .copyright{
+        align-items: center;
         display: flex;
         justify-content: center;
         flex-direction: column;
