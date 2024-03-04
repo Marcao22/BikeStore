@@ -3,49 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bicicletas</title>
+    <title>vestuario</title>
     <link rel="stylesheet" href="../CSS/vestuario.css">
     <link rel="stylesheet" href="../CSS/estiloFooter.css">
     
 </head>
 <body>
-        <!--Navbar-->
-<div class="contenido">
 
-
-    <header class="header">
-        <img src="/logo.png" alt="BIKE STORE" class="logo">
-       
-    
-       <div class="container">
-       
-        <div class="btn">
-          <input type="text" placeholder="Buscar">
-          <i class="fa fa-search"></i>
-         
-       </div>
-     
-    
-       </div>
-      
-        <img class="logo1" src="/usario.png">
-        <img class="logo1" src="/carrito.png">
-     
-    </header>
-    
-      <nav class="nav">
-      <ul class="barnav">
-        <li class="menu">HOME</li>
-        <li class="menu">BICICLETAS</li>
-        <li class="menu">ACCESORIOS</li>
-        <li class="menu">VESTUARIO</li>
-        <li class="menu">PRODUCTOS EN DESCUENTO</li>
-        <li class="menu">CONTACTANOS</li>
-      </ul>
-    </nav>
-
-</div>
-    
 
     <div class="contenedor">
         <img src="../IMG/vestuario1.png"  class="imagen_bici">
@@ -55,17 +19,42 @@
       
 
    
-    <div class="contenedor2">
-        <div class="filtros">
-        
-            <h3>categorias</h3>
-            <p>cuadro a la izquierda</p>
+      <div class="contenedor2">
+        <div class="cuadro">
+            <h2>Categorías</h2>
+            <input type="checkbox" id="ruta" value="Bicicletas De Ruta">
+            <label for="ruta">Bicicletas De Ruta</label><br>
+            <input type="checkbox" id="urbana" value="Bicicletas Urbanas">
+            <label for="urbana">Bicicletas Urbanas</label><br>
+            <input type="checkbox" id="montana" value="Bicicletas De Montaña">
+            <label for="montana">Bicicletas De Montaña</label><br>
+            
+            <h2>Etiquetas</h2>
+            <input type="checkbox" id="outlet" value="Outlet">
+            <label for="outlet">Outlet</label><br>
+            
+            <h2>Marca</h2>
+            <input type="checkbox" id="bmc" value="BMC">
+            <label for="bmc">BMC</label><br>
+            <input type="checkbox" id="scott" value="Scott">
+            <label for="scott">Scott</label><br>
+            <input type="checkbox" id="specialized" value="Specialized">
+            <label for="specialized">Specialized</label><br>
+            
+            <h2>Precio</h2>
+            <label  for="minPrice">Min:</label>
+            <input type="number" id="minPrice" min="10" max="50"><br>
+            <label for="maxPrice">Max:</label>
+            <input type="number" id="maxPrice" min="10" max="50">
+            
+            
+            
+            <button onclick="filtrar()">Filtrar</button>
         </div>
-    
 
       <div class="catalogo">
         
-        <div class="bicicleta">
+        <div class="bicicleta"data-categoria="Bicicletas De Ruta" data-marca="BMC" data-precio="400">
             <img src="../IMG/vestuario.png" alt="vestuario 1">
             <h2>Bicicleta de Montaña</h2>
             <p> $300</p>
@@ -106,7 +95,7 @@
             <button>Comprar</button>
         </div>
         <div class="bicicleta">
-            <img src="../IMG/bici_1.png" alt="vestuario 7">
+            <img src="../IMG/vestuario.png" alt="vestuario 7">
             <h2>Bicicleta de Carretera</h2>
             <p> $400</p>
             <button>Comprar</button>
@@ -114,10 +103,38 @@
 
     </div>
 
-
-
-    
 </div>
+<script>
+    function filtrar() {
+        // Obtener valores de los filtros
+        var categorias = [];
+        document.querySelectorAll('input[type="checkbox"]:checked').forEach(function (checkbox) {
+            categorias.push(checkbox.value);
+        });
+        var marcaSeleccionada = document.querySelector('input[name="Marca"]:checked');
+        var precioMin = parseFloat(document.getElementById('minPrice').value);
+        var precioMax = parseFloat(document.getElementById('maxPrice').value);
+
+        // Filtrar elementos del catálogo
+        var bicicletas = document.querySelectorAll('.bicicleta');
+        bicicletas.forEach(function(bicicleta) {
+            var categoria = bicicleta.getAttribute('data-categoria');
+            var marca = bicicleta.getAttribute('data-marca');
+            var precio = parseFloat(bicicleta.getAttribute('data-precio'));
+
+            var categoriaMatch = categorias.length === 0 || categorias.includes(categoria);
+            var marcaMatch = !marcaSeleccionada || marca === marcaSeleccionada.value;
+            var precioMatch = isNaN(precioMin) || isNaN(precioMax) || (precio >= precioMin && precio <= precioMax);
+
+            if (categoriaMatch && marcaMatch && precioMatch) {
+                bicicleta.style.display = 'block'; // Mostrar la bicicleta
+            } else {
+                bicicleta.style.display = 'none'; // Ocultar la bicicleta
+            }
+        });
+    }
+</script>
+
 
 </body>
 </html>
