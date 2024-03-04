@@ -1,7 +1,7 @@
 
 
-
-/*lb1*/
+/*CONTENIDO CSS CARRITO
+lb1
 *{
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@
    
 }
 
-/*frame2*/
+frame2
 .continer2{
     display: flex;
     justify-content:space-between;
@@ -68,7 +68,7 @@ textarea{
 }
 
 
-/*frame3*/
+frame3
 .containerBtn{
     display: flex;
     justify-content: space-between;
@@ -95,7 +95,7 @@ textarea{
     width: 8%;
 }
 
-/*frame3*/
+frame3
 .frame2{
    display: flex;
    justify-content: space-around;
@@ -146,7 +146,7 @@ align-items:center ;
 
 
 
-/*footer*/
+footer
 
 
 #fondo{
@@ -214,6 +214,7 @@ color: white;
     align-items: center;
 
 }
+*/
 
 
 /* Estilos responsive */
