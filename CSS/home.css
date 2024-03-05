@@ -167,7 +167,6 @@ input {
 }
 
 .galery1 {
-    margin-top: 10em;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-wrap: wrap;
@@ -183,8 +182,8 @@ input {
 }
 
 .bici {
-    width: 15em;
-    height: 15em;
+    width: 20em;
+    height: 20em;
 }
 
 .frase {
@@ -264,24 +263,38 @@ input {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    margin: 15px;
+    margin: 20px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     border: 1px solid rgb(255, 255, 255);
     box-shadow: 2px 2px 2px 1px rgba(32, 32, 32, 0.3);
+    width: 200px;
+    height: 300px
 }
 
 .box-img {
+   
     display: flex;
     flex-wrap: wrap;
+   
 
+   
+}
+.box-img1 {
+    display: flex;
+    flex-wrap: wrap;
+   
 }
 
-.a {
-    width: 13em;
-    height: 9em;
+.b{
+    font-size: 18px;
+    margin: 10px;
 }
 
+.c{
+    font-size: 25px;
+    margin: 5px;
+}
 .btn-img {
     background-color: blue;
     text-decoration: none;
