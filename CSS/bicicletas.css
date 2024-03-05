@@ -1,154 +1,165 @@
 body {
-    margin: 0;
-    padding: 0;
-  }
-/* Navbar */
-.header {
+  margin: 0;
+  padding: 0;
 
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px; /* Añadido relleno alrededor del contenido */
-    height: 6em;
+  background-size: contain;
+  /* Ajusta la imagen de fondo para que quepa dentro del contenedor */
+  background-repeat: no-repeat;
+  /* Evita que la imagen de fondo se repita */
+  background-position: center;
+  /* Centra la imagen de fondo */
 }
 
-.logo {
-    height: 50px; /* Reducido el tamaño del logo */
+/**catalogo**/
+.imagen_bici {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
 
-.btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.texto-superpuesto {
+  position: absolute;
+  top: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 5vw;
+  /* Tamaño de fuente relativo al ancho del viewport */
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  height: 30vw;
+  max-height: 100%;
 }
 
-.btn input {
-    width: 200px; /* Ajustado el ancho del input de búsqueda */
-    padding: 10px; /* Añadido relleno alrededor del input */
-}
-
-.box-img {
-    display: flex;
-    align-items: center;
-}
-
-.logo1 {
-    height: 30px; /* Reducido el tamaño de los iconos */
-    margin-left: 10px; /* Añadido espacio entre los iconos */
-}
-
-.nav {
-    width: 100%;
-    height: 4em;
-    background-color: black;
-}
-
-.barnav{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu {
-    width: 10%;
-    height: 100%;
-   
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 1em;
-}
-
-.menu:hover {
-    background-color: blue;
-}
-  .imagen_bici{
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-  }
-
-  .texto-superpuesto{
-    position: absolute;
-    top: auto;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 5vw; /* Tamaño de fuente relativo al ancho del viewport */
-    font-weight: bold;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    height: 50vh;
-    max-height: 100%; 
-  }
-  
-  .catalogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 50px;
+.catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 
 .bicicleta {
-    max-width: 100%;
-    margin: 20px;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
-    height: 40%;
+  width: 200px;
+  /* Ancho fijo */
+  height: 300px;
+  /* Alto fijo */
+  max-width: 100%;
+  /* Asegura que no exceda el ancho del contenedor */
+  max-height: 100%;
+  /* Asegura que no exceda el alto del contenedor */
+  margin: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
+  display: flex;
+  /* Agrega flexbox */
+  flex-direction: column;
+  /* Establece la dirección de los elementos como columna */
+  justify-content: space-between;
+  /* Distribuye el espacio verticalmente */
+
+}
+
+.bicicleta:hover {
+  transform: scale(1.05);
+  /* Aumentar el tamaño al pasar el mouse */
+  box-shadow: 0px 10px 10px rgba(177, 220, 255, 0.5);
+  /* Cambiar la sombra al pasar el mouse */
 }
 
 .bicicleta img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: 50%;
+  max-height: 100%;
+  object-fit: contain;
+  /* Ajusta la imagen dentro del contenedor */
 }
 
 .bicicleta h2 {
-    margin-top: 10px;
+  margin-top: 10px;
+  font-size: 23px;
 }
 
 .bicicleta p {
-    margin: 10px 0;
-    font-weight: bold;
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .bicicleta button {
-    padding: 10px 20px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  padding: 7px 20px;
+  /* Reducir el padding para hacer el botón más pequeño */
+  font-size: 14px;
+  /* Tamaño de fuente más pequeño */
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  /* Centrar el botón dentro del contenedor de la tarjeta */
 }
 
 .bicicleta button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 
-.filtros {
-    width: 300px; 
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+.cuadro {
+  float: left;
+  /* Hace que el cuadro flote a la izquierda */
+  width: 200px;
+  /* Ancho del cuadro */
+  margin: 20px;
+  /* Margen alrededor del cuadro */
+  border-radius: 10px;
+  /* Borde redondo del cuadro */
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+  /* Sombra del cuadro */
+  background-color: rgb(231, 231, 231);
 }
 
-.contenedor2{
-    display: flex;
-    padding: 200px;
+.contenedor2 {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+
+}
+
+.cuadro {
+  max-width: 100%;
+}
+
+.catalogo {
+  width: calc(70vw - 40px);
+}
+
+.cuadro p,
+h2,
+input {
+  margin: 10px;
+}
+
+.cuadro button {
+  padding: 10px 20px;
+  /* Ajusta el padding según sea necesario */
+  width: 80px;
+  margin: 20px;
+  font-size: 16px;
+  /* Tamaño de fuente */
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  /* Centra el botón horizontalmente */
 }
