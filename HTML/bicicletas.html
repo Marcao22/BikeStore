@@ -145,35 +145,41 @@
     </div>
 
     <script>
-        function filtrar() {
-            // Obtener valores de los filtros
-            var categorias = [];
-            document.querySelectorAll('input[type="checkbox"]:checked').forEach(function (checkbox) {
-                categorias.push(checkbox.value);
-            });
-            var marcaSeleccionada = document.querySelector('input[name="Marca"]:checked');
-            var precioMin = parseFloat(document.getElementById('minPrice').value);
-            var precioMax = parseFloat(document.getElementById('maxPrice').value);
+       function filtrar() {
+    // Obtener valores de los filtros
+    var categorias = [];
+    document.querySelectorAll('input[type="checkbox"]:checked').forEach(function(checkbox) {
+        categorias.push(checkbox.value);
+    });
+    var marcaSeleccionada = document.querySelector('input[name="Marca"]:checked');
+    var precioMin = parseFloat(document.getElementById('minPrice').value);
+    var precioMax = parseFloat(document.getElementById('maxPrice').value);
 
-            // Filtrar elementos del catálogo
-            var bicicletas = document.querySelectorAll('.bicicleta');
-            bicicletas.forEach(function (bicicleta) {
-                var categoria = bicicleta.getAttribute('data-categoria');
-                var marca = bicicleta.getAttribute('data-marca');
-                var precio = parseFloat(bicicleta.getAttribute('data-precio'));
+    // Filtrar elementos del catálogo
+    var bicicletas = document.querySelectorAll('.bicicleta');
+    bicicletas.forEach(function(bicicleta) {
+        var categoria = bicicleta.getAttribute('data-categoria');
+        var marca = bicicleta.getAttribute('data-marca');
+        var precio = parseFloat(bicicleta.getAttribute('data-precio'));
 
-                var categoriaMatch = categorias.length === 0 || categorias.includes(categoria);
-                var marcaMatch = !marcaSeleccionada || marca === marcaSeleccionada.value;
-                var precioMatch = isNaN(precioMin) || isNaN(precioMax) || (precio >= precioMin && precio <= precioMax);
+        var categoriaMatch = categorias.length === 0 || categorias.includes(categoria);
+        var marcaMatch = !marcaSeleccionada || marca === marcaSeleccionada.value;
+        var precioMatch = isNaN(precioMin) || isNaN(precioMax) || (precio >= precioMin && precio <= precioMax);
 
-                if (categoriaMatch && marcaMatch && precioMatch) {
-                    bicicleta.style.display = 'block'; // Mostrar la bicicleta
-                } else {
-                    bicicleta.style.display = 'none'; // Ocultar la bicicleta
-                }
-
-            });
+        if (categoriaMatch && marcaMatch && precioMatch) {
+            bicicleta.style.display = 'block'; // Mostrar la bicicleta
+        } else {
+            bicicleta.style.display = 'none'; // Ocultar la bicicleta
         }
+
+    });
+
+    // Restablecer estilos para mantener la alineación
+    document.querySelector('.catalogo').style.display = 'none';
+    setTimeout(function() {
+        document.querySelector('.catalogo').style.display = 'flex';
+    }, 50);
+}
     </script>
 
 </body>
