@@ -1,13 +1,15 @@
-*{
+/**{
     padding: 0;
     margin: 0;
     
 }
 .Formulario{
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
    
 
 }
@@ -20,8 +22,8 @@
 
 .navbarFormulario{
     width: 100%;
-    height: 150px;
-    background: black;
+    height: 10vh;
+    background-color: black;
     display: flex;
     justify-content:flex-start;
     align-items: first center;
@@ -31,23 +33,30 @@
    
     margin-bottom: 80px;
     border-radius: 10px;
-    width: 100%;
-    height: 10vh;
+    width: 25%;
+    height: 50%;
+    
     
 }
+
 .contFomulario{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 75px;
-   
-   
-    
-    
-   
+    margin-top: 75px;
 
 }
+
+.conFondo{
+    border-radius: 20px;
+    background: #b1afaf80;
+    margin: 10px;
+    border:groove rgb(255, 255, 255);
+}
+
+
+
 .contVerificar{
     display: flex;
     justify-content: center;
@@ -104,4 +113,116 @@
         
 
 }
+*/
+/*estilos formulario*/
 
+
+
+
+/*navbar*/
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.imgFomulario{
+    width: 90px;
+    height: 90px;
+}
+
+.conNavbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.navbarFormulario{
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    justify-content:flex-start;
+    align-items: first center;
+}
+/*codifo formulario*/
+
+.ContaMayor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body{
+    
+    background: url('/IMG/FondoPAGO.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.contTodo{
+    border: 2px solid rgb(255, 255, 255.2) ;
+    width: 420px;
+    background:transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px #00000080;
+    color: #fff;
+    border-radius: 20px;
+    padding: 30px 30px;
+}
+.contTodo h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+.contTodo  .conFomu{
+    width: 100%;
+    height: 50px;
+    color: #fff;
+     margin: 30px 0;
+}
+
+.conFomu input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: solid silver;
+    border-radius: 20px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+
+}
+
+.conFomu input::placeholder{
+    color: #fff;
+    
+    
+}
+
+.cont2 label input{
+    accent-color: #fff;
+    margin-right: 5px;
+}
+
+.btnRealizarPedido{
+    width: 100%;
+    height: 50px;
+    background: blue;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00000080;
+    font-weight: 600;
+}
