@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="icon" href="/IMG/logoredondeado.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -33,18 +34,25 @@
     </header>
 
   </section>
-  <nav class="nav">
-    <ul class="barnav">
-      <li class="menu">HOME</li>
-      <li class="menu"><a href="/HTML/bicicletas.html">BICICLETAS</a></li>
-      <li class="menu"><a href="/HTML/accesorio.html">ACCESORIOS</a></li>
-      <li class="menu"><a href="/HTML/vestuario.html">VESTUARIO</a></li>
-      <li class="menu"><a href="">DESCUENTO</a></li>
-      <li class="menu"><a href="/HTML/contactanos.html">CONTACTANOS</a></li>
-    </ul>
-  </nav>
+
   </section>
 </main>
+
+<header class="header2">
+       
+  <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+  <nav class="nav" id="nav">
+      <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+      <ul class="nav-list">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">BICICLETAS</a></li>
+          <li><a href="#">ACCESORIOS</a></li>
+          <li><a href="#">VESTUARIO</a></li>
+          <li><a href="#">DESCUENTO</a></li>
+          <li><a href="#">CONTACTANOS</a></li>
+      </ul>
+  </nav>
+</header>
 
   <section class="banner">
     <div class="caja">
@@ -153,63 +161,8 @@
     <img class="imagen" src="../IMG/homefooter.png">
   </div>
 
-  <footer id="fondo">
-    <img class="icoFooter" src="../IMG/logo.png" alt="">
-    <div class="iconoContacto"><img src="../IMG/iconoCorreoFooter.png" alt="">
-      <a class="linkCorreo" href="">infobikestore@gmail.com</a>
-      <img src="../IMG/iconoCelularFooter.png" alt="">
-      <p>+57 322 5547865</p>
-    </div>
-
-    <div class="txtinfoSitio">
-      <p class="p1">
-      <H2>Info sitio:</H2>
-      </p1>
-      <p class="p1">Terminos y Condiciones Promocion Actual</p1>
-      <p class="p1">Terminos y Condiciones Devoluciones</p1>
-      <p class="p1">Terminos y Condiciones Plan Separe</p1>
-      <p class="p1">Terminos y Condiciones Creditos ADDI</p1>
-      <p class="p1">Politica Tratamiento de Datos</p1>
-      <p class="p1">Politica de Privacidad</p1>
-      <p class="p1">Metodos de financiacion </p1>
-      <p class="p1">Terminos y Condiciones</p1>
-      <p class="p1">
-        </p1>Derecho de Retracto
-      <p class="p1">SIC</p1>
-      <p class="p1">Trabaja Con Nosotros</p1>
-      <p class="p1">¿Quieres Ser Distribuidor?</p1>
-    </div>
-
-    <div class="txtAyuda">
-      <p class="p1">
-      <H2>Ayuda:</H2>
-      </p1>
-      <p class="p1">Cambios y Devoluciones</p1>
-      <p class="p1">Garantia</p1>
-      <p class="p1">Terminos y Condiciones Garantia Dinamic</p1>
-      <p class="p1">Contacto</p1>
-      <p class="p1">Preguntas Frecuentes</p1>
-      <p class="p1">Politica de Envios</p1>
-      <p class="p1">Guia de Tallas Bicicletas</p1>
-      <p class="p1">Tiendas</p1>
-      <p class="p1">Politicas del Crash Replacement</p1>
-      <p class="p1">Terminos del Servicio</p1>
-      <p class="p1">Politica del Rembolso</p1>
-    </div>
-
-    <div class="txtContactanos">
-      <p class="p1">
-      <H2>Contactanos:</H2>
-      </p>
-      <p class="p1"><a class="linkNosotros" href="">Nosotros</a></p>
-      <p class="p1">Responsabilidad Social</p>
-    </div>
-  </footer>
-
-  <nav class="copyright">
-    <p><i> Copyright © BikeStore. Todos los Derechos Reservados</i></p>
-  </nav>
-
+  
+  <script src="../JAVASCRIPT/index.js"></script>
 </body>
 
 </html>
