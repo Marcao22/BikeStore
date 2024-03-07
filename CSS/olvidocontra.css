@@ -79,7 +79,7 @@ button {
 }
 
 body {
-    background-image: url(/IMG/frame56\,57\,58.png);
+    background-image: url(/IMG/inicio.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -92,15 +92,13 @@ body {
 
 
 .main{
-    flex-wrap: wrap;
-    display: flex;
-    align-items: center;
+ background-color: #00000080;
 }
 
 .columna {
     height: 100vh;
-    background-color: #00000070;
-    width: 370px;
+
+    width: 300px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -109,8 +107,8 @@ body {
 }
 
 .imgrd {
-    height: 300px;
-    width: 300px;
+    height: 150px;
+    width: 150px;
 }
 
 .upper-form {
@@ -125,8 +123,8 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    width: 400px; /* Ancho fijo */
-    height: 500px; /* Altura adaptable al contenido */
+    width: 350px; /* Ancho fijo */
+    height: 400px; /* Altura adaptable al contenido */
     background-color: white;
     border-radius: 20px;
     position: fixed; /* Cambiar de posición absoluta a fija */
@@ -145,9 +143,10 @@ body {
 
 .texto {
     color: white;
-    font-size: 69px;
+    font-size: 40px;
     font-family: "";
     text-align: center;
+    margin-block-end: 100px;
 }
 
 .signup {
