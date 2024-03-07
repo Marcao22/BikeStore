@@ -1,107 +1,129 @@
-*{
-    padding: 0;
-    margin: 0;
-    
-}
-.Formulario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-   
 
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .imgFomulario{
-    width: 90px;
+    width: 70px;
     height: 90px;
 }
+.txtFormulario{
+    color:black;
 
+  text-align: center ;
+   background: white;
+}
 
+.conNavbar{
+    display: flex;
+   
+    
+
+}
 .navbarFormulario{
     width: 100%;
-    height: 150px;
+    height: 10vh;
     background: black;
     display: flex;
     justify-content:flex-start;
     align-items: first center;
 }
+/*codifo formulario*/
 
-.conMayorFor{
-   
-    margin-bottom: 80px;
-    border-radius: 10px;
-    width: 100%;
-    height: 10vh;
-    
-}
-.contFomulario{
+.ContaMayor{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin: 75px;
-   
-   
+    min-height: 100vh;
+    padding: 60px;
+}
+
+body{
     
-    
-   
+    background: url('/IMG/FondoPAGO.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
 
 }
-.contVerificar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column-reverse;
-    margin:10px;
-}
-.campo{
-    border-radius: 5px;
-    width: 250px;
-    height: 20px;
-    margin: 10px;
-    border: none;
-    border: groove rgb(229, 209, 209);
+
+.contTodo{
+    border: 2px solid rgb(255, 255, 255.2) ;
+    width: 420px;
+    background:transparent;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 10px #00000080;
+    color: #fff;
     border-radius: 20px;
+    padding: 30px 30px;
+    font-size: 25px;
+}
+label{
+    text-align: center;
+}
+.contTodo h1 {
+    font-size: 50px;
+    text-align: center;
     
-    
-
 }
 
 
-.BtnFinalizar{
-    border-radius: 5px;
-    width: 250px;
-    height: 30px; 
+
+.contTodo  .conFomu{
+    width: 100%;
+    height: 50px;
+    color: #fff;
+     margin: 30px 0;
+}
+
+.conFomu input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: solid silver;
+    border-radius: 20px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+
+}
+
+.conFomu input::placeholder{
+    color: #fff;
+    
+    
+}
+
+.cont2 label input{
+    accent-color: #fff;
+    margin-right: 5px;
+  
+   
+    
+    
+}
+
+.btnRealizarPedido{
+    width: 100%;
+    height: 50px;
     background: blue;
-    
-
-    
-}
-.camopoFinalizar,.BtnFinalizar{
-    margin: 25px;
-}
-.estiloDepar{
-    color:rgb(125, 124, 124);
-}
-.linkFinalizar{
-    text-decoration: none;
-    color: white;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00000080;
+    font-weight: 600;
 }
 
-
-
-
-
-@media (max-width:465px){
-    .conMayorFor{
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+@media(min-width:600px){
+    .imgFomulario{
+        width: 50px;
+        height: 40px;
     }
-        
-       
-        
-
 }
-
