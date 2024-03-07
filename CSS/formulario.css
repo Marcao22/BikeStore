@@ -1,125 +1,3 @@
-/**{
-    padding: 0;
-    margin: 0;
-    
-}
-.Formulario{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-   
-
-}
-
-.imgFomulario{
-    width: 90px;
-    height: 90px;
-}
-
-
-.navbarFormulario{
-    width: 100%;
-    height: 10vh;
-    background-color: black;
-    display: flex;
-    justify-content:flex-start;
-    align-items: first center;
-}
-
-.conMayorFor{
-   
-    margin-bottom: 80px;
-    border-radius: 10px;
-    width: 25%;
-    height: 50%;
-    
-    
-}
-
-.contFomulario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 75px;
-
-}
-
-.conFondo{
-    border-radius: 20px;
-    background: #b1afaf80;
-    margin: 10px;
-    border:groove rgb(255, 255, 255);
-}
-
-
-
-.contVerificar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column-reverse;
-    margin:10px;
-}
-.campo{
-    border-radius: 5px;
-    width: 250px;
-    height: 20px;
-    margin: 10px;
-    border: none;
-    border: groove rgb(229, 209, 209);
-    border-radius: 20px;
-    
-    
-
-}
-
-
-.BtnFinalizar{
-    border-radius: 5px;
-    width: 250px;
-    height: 30px; 
-    background: blue;
-    
-
-    
-}
-.camopoFinalizar,.BtnFinalizar{
-    margin: 25px;
-}
-.estiloDepar{
-    color:rgb(125, 124, 124);
-}
-.linkFinalizar{
-    text-decoration: none;
-    color: white;
-}
-
-
-
-
-
-@media (max-width:465px){
-    .conMayorFor{
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-        
-       
-        
-
-}
-*/
-/*estilos formulario*/
-
-
-
-
-/*navbar*/
 
 
 
@@ -130,20 +8,26 @@
 }
 
 .imgFomulario{
-    width: 90px;
+    width: 70px;
     height: 90px;
+}
+.txtFormulario{
+    color:black;
+
+  text-align: center ;
+   background: white;
 }
 
 .conNavbar{
     display: flex;
-    align-items: center;
-    justify-content: center;
+   
+    
 
 }
 .navbarFormulario{
     width: 100%;
     height: 10vh;
-    background-color: black;
+    background: black;
     display: flex;
     justify-content:flex-start;
     align-items: first center;
@@ -155,6 +39,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 60px;
 }
 
 body{
@@ -169,15 +54,20 @@ body{
     border: 2px solid rgb(255, 255, 255.2) ;
     width: 420px;
     background:transparent;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(3px);
     box-shadow: 0 0 10px #00000080;
     color: #fff;
     border-radius: 20px;
     padding: 30px 30px;
+    font-size: 25px;
 }
-.contTodo h1{
+label{
+    text-align: center;
+}
+.contTodo h1 {
     font-size: 50px;
     text-align: center;
+    
 }
 
 
@@ -211,6 +101,10 @@ body{
 .cont2 label input{
     accent-color: #fff;
     margin-right: 5px;
+  
+   
+    
+    
 }
 
 .btnRealizarPedido{
@@ -225,4 +119,11 @@ body{
     cursor: pointer;
     box-shadow: 0 0 15px #00000080;
     font-weight: 600;
+}
+
+@media(min-width:600px){
+    .imgFomulario{
+        width: 50px;
+        height: 40px;
+    }
 }
