@@ -391,10 +391,10 @@ a{
 
 
 
+
 /* Estilos responsive */
 @media (max-width:550px ) {
-
-
+   
     
 .containerBtn{
     
@@ -420,10 +420,7 @@ a{
         margin: 0;
 
     }
-    textarea{
-        width: 30vh;
-        height: 20vh;
-    }
+    
     .continer2, .container1{
         display: flex;
         justify-content: center;
