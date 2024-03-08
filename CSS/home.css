@@ -34,9 +34,10 @@
 }
 
 .container {
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: center;
+
 }
 a{
     text-decoration: none;
@@ -79,21 +80,14 @@ input {
     object-fit: cover;
     height: 40px;
     width: 40px;
-    margin-left: 15px;
+    margin-left: px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
 
 .header2 {
-    
+    height: 50px;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
     background-color: #000000;
     display: flex;
    justify-content: center;
@@ -112,26 +106,29 @@ input {
 .nav-list li {
     display: inline-block; /* Muestra los elementos en línea */
     margin: 0 10px; /* Añade un margen horizontal */
+   
 }
 
 /* Estilos para los enlaces */
 .nav-list li a {
-    text-decoration: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
     color: white;
-    padding: 10px 20px;
-    font-size: 16px;
+    margin: 5px;
+    font-size: 15px;
+
+   
 }
 
 /* Estilos para los enlaces al pasar el mouse */
-.nav-list li a:hover {
+.nav-list a:hover {
     background-color: blue;
+  
 }
 
 
-.nav-list li a:hover {
-    background-color: blue;
-   
-}
+
 
 .abrir-menu,
 .cerrar-menu {
@@ -165,7 +162,7 @@ input {
 
     .abrir-menu {
         color: #ffffff;
-        margin-left: 15em;
+       
     }
 
     .cerrar-menu {
@@ -201,7 +198,9 @@ input {
 
     .nav-list li a {
         color: #ecececec;
+        font-size: 11px;
     }
+  
 
     
 .nav-list {
@@ -321,8 +320,8 @@ input {
 }
 
 .bici {
-    width: 20em;
-    height: 20em;
+    width: 13em;
+    height: 13em;
 }
 
 .frase {
@@ -335,7 +334,7 @@ input {
     width: 13em;
     display: flex;
     flex-wrap: wrap;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .frase1 {
@@ -344,7 +343,7 @@ input {
     color: rgb(255, 255, 255);
     border-radius: 5px;
     width: 13em;
-    font-size: 18px;
+    font-size: 15px;
     display: flex;
     flex-wrap: wrap;
 
@@ -507,8 +506,7 @@ input {
 
 @media only screen and (max-width: 768px) {
     .header {
-        flex-direction: column;
-        /* Cambia la dirección del flexbox a columna */
+       
         align-items: flex-start;
         /* Alinea los elementos a la izquierda */
         padding: 10px;
@@ -533,7 +531,7 @@ input {
         flex-direction: column;
         align-items: center;
         width: 60%;
-        height: 20%;
+        height: 8em;
         background-color: rgba(0, 0, 0, 0.507);
     }
 
@@ -541,7 +539,22 @@ input {
         font-size: 15px;
     }
     .title1{
+        display: flex;
+        justify-content: center;
         font-size: 15px;
-        margin: 20%;
+        margin: 18%;
     }
+    .fa{
+        margin-left: 15em;
+       }
+       .logo1{
+          margin-top: 2em;
+       }
+   .btn {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: 30px;
+    margin-right: 4em;
+}
 }
