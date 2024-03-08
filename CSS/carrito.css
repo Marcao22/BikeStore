@@ -4,7 +4,49 @@
     box-sizing: border-box;
 }
 
+.conMayor{
+    padding: 50px;
+    margin: 20px;
+    background: #e0e0e0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
 
+}
+.imgEstilo{
+    border-radius: 10px;
+}
+.conGru{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    
+   
+    
+}
+.btnOpciones{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: baseline;
+   
+}
+
+
+
+.conPedido{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 30%;
+    height: 50vh;
+    border-radius: 20px;
+    background: silver;
+
+}
 
 
 
