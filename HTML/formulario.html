@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
+    
+    <link rel="icon" href="/IMG/logoredondeado.png">
     <link rel="stylesheet" href="/css/formulario.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario para contraentrega</title>
+    <title>Formulario de envio</title>
 </head>
 
 <body>
@@ -17,7 +19,7 @@
 
 
 
-        <img src="/IMG/logo.png" alt="" class="imgFomulario">
+        <a href="/HTML/home.html"><img src="/IMG/logoredondeado.png" alt="" class="imgFomulario"></a>
 
 
     </nav>
@@ -25,7 +27,7 @@
     
 </div>
     <div class="txtFormulario">
-       <h2>PAGO CONTRAENTREGA EN TODA COLOMBIA</h2>
+       <h1>PAGO CONTRAENTREGA EN TODA COLOMBIA</h1>
     </div>
 
     
@@ -54,10 +56,7 @@
                 <input type="text" placeholder="Apellido">
             </div>
             
-            <div class="conFomu">
-            
-                <input type="text" placeholder="Apellido">
-            </div>
+           
             
             
             
@@ -84,11 +83,12 @@
             </div>
             
             <div class="cont2">
-                <label><input type="checkbox">Pagare el revisivir el pedido</label>
+                <label><input type="checkbox" checked><u>Pagare al revisivir pedido</u></label>
             
             
             </div>
             <button type="submit" class="btnRealizarPedido">Finalizar</button>
+            <p class="msjAlerta" id="Mensaje"></p>
 
         </form>
     </div>
