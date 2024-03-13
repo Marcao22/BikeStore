@@ -227,3 +227,16 @@ a{
 
 
 }
+@media (max-width :850px){
+
+    .conMayor,.conGru{
+
+        padding: 15px;
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+    }
+   
+}
+
