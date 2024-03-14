@@ -267,24 +267,35 @@ input {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     border: 1px solid rgb(255, 255, 255);
-    box-shadow: 2px 2px 2px 1px rgba(32, 32, 32, 0.3);
     width: 200px;
-    height: 300px
+    height: 300px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
 }
+.box-galery:hover {
+    transform: scale(1.05);
+    /* Aumentar el tamaño al pasar el mouse */
+    box-shadow: 0px 10px 10px rgba(177, 220, 255, 0.5);
+    /* Cambiar la sombra al pasar el mouse */
+  }
 
 .box-img {
    
     display: flex;
     flex-wrap: wrap;
    
-
-   
 }
+
 .box-img1 {
     display: flex;
     flex-wrap: wrap;
    
 }
+
+.btn-img:hover {
+    background-color: #0056b3;
+  }
 
 .b{
     font-size: 18px;
@@ -397,4 +408,63 @@ input {
         height: 20%;
         background-color: rgba(0, 0, 0, 0.507);
     }
+}
+ /* Botón de cierre del modal */
+ .close {
+    color: #aaa;
+    position: absolute; /* Hacemos que el botón sea posicionado de manera absoluta */
+    top: 0px; /* Ajustamos la posición desde la parte superior */
+    right: 5px; /* Ajustamos la posición desde la derecha */
+    font-size: 38px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px; /* Agregamos espacio interno al botón */
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+  /* Botón de cierre del modal */
+  .close {
+    color: #aaa;
+    position: absolute; /* Hacemos que el botón sea posicionado de manera absoluta */
+    top: 0px; /* Ajustamos la posición desde la parte superior */
+    right: 5px; /* Ajustamos la posición desde la derecha */
+    font-size: 38px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px; /* Agregamos espacio interno al botón */
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /*Navbar*/
+
+
+
+@media screen and (max-width: 550px) {
+    .nav{
+        position: absolute;
+        top:0;
+        right: 0;
+    }
+    .barnav{
+       flex-direction: column;
+       align-items: end;
+    }
+    
 }
