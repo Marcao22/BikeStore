@@ -2,8 +2,12 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
 }
 
+.h{
+    width: 100% !important;
+}
 .contenido {
     width: 100%;
     height: 100%;
@@ -13,7 +17,6 @@
     justify-content: flex-start;
     align-items: center;
 }
-
 .header {
     width: 100%;
     height: 7em;
@@ -22,7 +25,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .logo {
     object-fit: cover;
     width: 100px;
@@ -30,13 +32,15 @@
     align-items: center;
     justify-content: center;
 }
-
 .container {
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: center;
 }
-
+a{
+    text-decoration: none;
+    color: white;
+}
 .btn {
     display: flex;
     justify-content: center;
@@ -44,14 +48,13 @@
 }
 
 input {
-    padding: 10px 10px;
+    padding: 5px 10px;
     /* Añade espaciado interno */
     position: absolute;
     width: 20%;
     height: 40px;
     border-radius: 20px;
 }
-
 .fa-search {
     position: absolute;
     background-color: blue;
@@ -68,29 +71,144 @@ input {
     margin-top: 12px;
     margin-left: -7px;
 }
-
 .logo1 {
     object-fit: cover;
     height: 40px;
     width: 40px;
-    margin-left: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
-
-.nav {
+.header2 {
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
     display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 4em;
-    background-color: rgb(0, 0, 0);
+   justify-content: center;
+
 }
 
-.barnav {
+
+.nav-list {
+    list-style: none; /* Quita los estilos de lista */
+    padding: 0; /* Quita el relleno */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilos para los elementos de la lista */
+.nav-list li {
+    display: inline-block; /* Muestra los elementos en línea */
+    margin: 0 10px; /* Añade un margen horizontal */ 
+}
+/* Estilos para los enlaces */
+.nav-list li a {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 5px;
+    font-size: 15px;
+}
+/* Estilos para los enlaces al pasar el mouse */
+.nav-list a:hover {
+    background-color: blue;
+}
+.abrir-menu {
+display: flex;
+justify-content: center;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;  
+    }
+    .logo{
+        display: none;
+    }
+    .logo1{
+        display: none;
+    }
+    .container{
+        display: none;
+    }
+    .header{
+        display: non;
+    }
+    .header2 {
+        height: 60px;
+        display: flex;
+        justify-content: flex-end;
+        background-color: black;
+    }
+    .bi.bi-list{
+        color: white;
+        margin-right: 10px;
+    }
+    .cerrar-menu {
+       color: white;
+    }
+    .nav {
+        height: 200em;
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+    
+    .nav.visible {
+        z-index: 20;
+        opacity: 1;
+        visibility: visible;
+      
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+    .nav-list li a {
+        color: #ecececec;
+        font-size: 11px;
+    }
+.nav-list {
     list-style-type: none;
-    /* Quita los puntos de la lista */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
 }
-
-.menu {
-    display: inline-block;
+.header{
+    display: none;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+    color: white;
+    padding: 10px 20px;
+    /* Añade espaciado interno */
+    color: white;
+    /* Texto blanco */
+    font-size: 16px;
+    /* Tamaño de fuente */
+    margin-top: 10px;
     /* Muestra los elementos en línea */
     padding: 10px 20px;
     /* Añade espaciado interno */
@@ -100,12 +218,12 @@ input {
     /* Tamaño de fuente */
     margin-top: 10px;
 }
+}
 
 /* Estilos para los elementos de la lista al pasar el mouse sobre ellos */
 .menu:hover {
     background-color: blue;
 }
-
 .banner {
     height: 30%;
     background-color: rgb(0, 0, 0);
@@ -114,7 +232,6 @@ input {
     justify-content: center;
     align-items: center;
 }
-
 .caja {
     position: absolute;
     display: flex;
@@ -124,7 +241,6 @@ input {
     height: 18em;
     background-color: rgba(0, 0, 0, 0.507);
 }
-
 .title {
     position: absolute;
     margin-top: 1em;
@@ -134,7 +250,6 @@ input {
     font-size: 40px;
     /* Tamaño de fuente */
 }
-
 .title1 {
     margin-left: 20%;
     margin-right: 20%;
@@ -145,12 +260,10 @@ input {
     color: white;
     /* Color del texto */
 }
-
 .img_banner {
     width: 100%;
     height: 70%;
 }
-
 .cajagrande {
     position: relative;
     background-color: rgb(255, 255, 255);
@@ -159,20 +272,17 @@ input {
     justify-content: center;
     align-items: center;
 }
-
 .box-galery1 {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     margin: 7px;
 }
-
 .galery1 {
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 .box-img {
     margin-bottom: 10%;
     display: flex;
@@ -182,10 +292,9 @@ input {
 }
 
 .bici {
-    width: 20em;
-    height: 20em;
+    width: 13em;
+    height: 13em;
 }
-
 .frase {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.699);
@@ -196,21 +305,18 @@ input {
     width: 13em;
     display: flex;
     flex-wrap: wrap;
-    font-size: 18px;
+    font-size: 15px;
 }
-
 .frase1 {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.699);
     color: rgb(255, 255, 255);
     border-radius: 5px;
     width: 13em;
-    font-size: 18px;
+    font-size: 15px;
     display: flex;
     flex-wrap: wrap;
-
 }
-
 .btn-imgs {
     position: absolute;
     background-color: blue;
@@ -222,7 +328,6 @@ input {
     border-radius: 0.5em;
 
 }
-
 .article1 {
     position: relative;
     background-color: rgb(255, 255, 255);
@@ -231,7 +336,6 @@ input {
     justify-content: center;
     align-items: center;
 }
-
 .tituloprincipal {
     color: black;
     margin-bottom: 30px;
@@ -241,7 +345,6 @@ input {
     display: flex;
     display: inline-block;
 }
-
 .article {
     position: relative;
     background-color: rgb(255, 255, 255);
@@ -250,14 +353,12 @@ input {
     justify-content: center;
     align-items: center;
 }
-
 .galery {
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 .box-galery {
     display: flex;
     flex-direction: column;
@@ -267,36 +368,19 @@ input {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     border: 1px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px 1px rgba(32, 32, 32, 0.3);
     width: 200px;
-    height: 300px;
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
-    transition: box-shadow 0.3s ease;
-    transition: transform 0.3s ease;
+    height: 300px
 }
-.box-galery:hover {
-    transform: scale(1.05);
-    /* Aumentar el tamaño al pasar el mouse */
-    box-shadow: 0px 10px 10px rgba(177, 220, 255, 0.5);
-    /* Cambiar la sombra al pasar el mouse */
-  }
-
 .box-img {
-   
     display: flex;
     flex-wrap: wrap;
-   
 }
-
 .box-img1 {
     display: flex;
     flex-wrap: wrap;
    
 }
-
-.btn-img:hover {
-    background-color: #0056b3;
-  }
-
 .b{
     font-size: 18px;
     margin: 10px;
@@ -315,23 +399,37 @@ input {
     margin: 1em 0;
     border-radius: 0.5em;
 }
-
 .box {
     background-color: black;
 }
-
 .imagen {
     width: 100%;
 }
-
+.containerBtn{
+    
+    height: auto;
+    width: auto;
+    justify-content: space-around;
+}
+/*footer*/
 #fondo {
+    padding: 20px;
     width: 100%;
-    height: 19em;
+    height: 100%;
     background-color: black;
     color: white;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items:flex-start;
+    position: static;
+}
+
+.increCarrito {
+    margin: 2% 2%;
+    display: flex;
+    justify-content: center;
+    /* Centrar horizontalmente los botones */
+    align-items: center;
 }
 
 .txtinfoSitio {
@@ -344,19 +442,21 @@ input {
 
 .txtContactanos {
     flex-direction: column;
+
 }
 
 .icoFooter {
-    width: 10%;
-    height: 40%;
+    width: 100px;
+    height: 100px;
 }
 
 .iconoContacto {
-    width: 10px;
-    height: 10px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+
 }
 
 .linkCorreo {
@@ -376,95 +476,100 @@ input {
     display: flex;
     align-items: center;
 }
+/*footer*/
 
 @media only screen and (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        /* Cambia la dirección del flexbox a columna */
+    .header { 
         align-items: flex-start;
         /* Alinea los elementos a la izquierda */
         padding: 10px;
         /* Reducción del espaciado interno */
     }
-
     .container {
         margin: 10px 0;
         /* Reducción del margen vertical */
     }
-
     input[type="text"] {
         margin-left: 10%;
         align-items: flex-start;
         width: calc(30% - 40px);
         /* Reducción del ancho del campo de búsqueda */
     }
-
     .caja {
         position: absolute;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 60%;
-        height: 20%;
+        height: 8em;
         background-color: rgba(0, 0, 0, 0.507);
     }
-}
- /* Botón de cierre del modal */
- .close {
-    color: #aaa;
-    position: absolute; /* Hacemos que el botón sea posicionado de manera absoluta */
-    top: 0px; /* Ajustamos la posición desde la parte superior */
-    right: 5px; /* Ajustamos la posición desde la derecha */
-    font-size: 38px;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 5px; /* Agregamos espacio interno al botón */
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  * {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-  /* Botón de cierre del modal */
-  .close {
-    color: #aaa;
-    position: absolute; /* Hacemos que el botón sea posicionado de manera absoluta */
-    top: 0px; /* Ajustamos la posición desde la parte superior */
-    right: 5px; /* Ajustamos la posición desde la derecha */
-    font-size: 38px;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 5px; /* Agregamos espacio interno al botón */
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  /*Navbar*/
-
-
-
-@media screen and (max-width: 550px) {
-    .nav{
-        position: absolute;
-        top:0;
-        right: 0;
+    .title{
+        font-size: 15px;
     }
-    .barnav{
-       flex-direction: column;
-       align-items: end;
+    .title1{
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        margin: 18%;
+    }
+    .fa{
+        margin-left: 15em;
+       }
+       .logo1{
+         margin-top: 2em;
+       }
+    .btn {
+        display: flex;
+        justify-content: center;
+        color: white;
+        margin: 30px;
+        margin-right: 4em;
+    }
+
+    .imgnone{
+        display: none;
     }
     
+    #fondo {
+        width: 100%;   
+        flex-direction: column;
+        /* Cambia a disposición de columna en pantallas pequeñas */
+        align-items: center;
+        /* Centra los elementos en pantallas pequeñas */
+        text-align: center;
+        /* Alinea el texto al centro en pantallas pequeñas */
+        height: 100%;
+        margin: 0;
+    }
+    .continer2, .container1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .txtinfoSitio {
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .txtAyuda {
+        margin-bottom: 20px;
+    }
+    .txtContactanos {
+        margin-bottom: 20px;
+        /* Añade espacio entre las columnas */
+    }
+    .imgF {
+        display: none;
+    }
+    .copyright {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .frame2 {
+        flex-direction: column;
+    }
 }
