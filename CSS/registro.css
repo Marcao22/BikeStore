@@ -21,7 +21,12 @@ body {
 }
 
 main{
-    background-color: #00000080;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080; /* Color de fondo con transparencia */
 }
 h2 {
     margin: 1rem 0 2rem 0;
@@ -149,6 +154,7 @@ button {
 
 }
 
+
 #popo {
     width: 120px;
     margin: 5px
@@ -170,9 +176,31 @@ button {
     margin-left: 10px;
 }
 
-@media (max-width: 1025px){
+@media (max-width:648px){
     .columna{
         display: none;
     }
-  
+
+    .formulario {
+        max-width: 100%;
+        width: 270px;
+        padding: 20px;
+
+    }
+
+    input {
+        max-width: 100%;
+        width: 270px;
+        margin-top: 25px;
+        
+    }
+
+    .ordenar2 {
+        max-width: 100%;
+        width: 270%;
+        font-size: 15px;
+        margin-left: 6%;
+    }
+
+
 }

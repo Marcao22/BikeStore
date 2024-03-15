@@ -10,9 +10,8 @@ function restarUno() {
     document.querySelector("#msgContador").innerHTML = contador
 }
 
-function sumarUno() {
+const sumarUno =()=> {
     contador = contador + 1;
     document.querySelector("#msgContador").innerHTML = contador
 
 }
-

@@ -8,14 +8,15 @@
 }
 
 .imgFomulario{
-    width: 70px;
-    height: 90px;
+    width: 90px;
+    height: 80px;
+    
 }
 .txtFormulario{
-    color:black;
+    color:white;
 
   text-align: center ;
-   background: white;
+   background: black;
 }
 
 .conNavbar{
@@ -26,8 +27,8 @@
 }
 .navbarFormulario{
     width: 100%;
-    height: 10vh;
-    background: black;
+    height: 12vh;
+    background: white;
     display: flex;
     justify-content:flex-start;
     align-items: first center;
@@ -40,6 +41,7 @@
     align-items: center;
     min-height: 100vh;
     padding: 60px;
+    
 }
 
 body{
@@ -47,26 +49,30 @@ body{
     background: url('/IMG/FondoPAGO.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-
+    
 }
 
 .contTodo{
-    border: 2px solid rgb(255, 255, 255.2) ;
+    border: 2px solid white ;
     width: 420px;
-    background:transparent;
-    backdrop-filter: blur(3px);
-    box-shadow: 0 0 10px #00000080;
+   background: #ffffff;
+
     color: #fff;
     border-radius: 20px;
     padding: 30px 30px;
     font-size: 25px;
 }
 label{
+    font-size: 30px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    color: black;
 }
 .contTodo h1 {
     font-size: 50px;
     text-align: center;
+    color: black;
     
 }
 
@@ -77,6 +83,8 @@ label{
     height: 50px;
     color: #fff;
      margin: 30px 0;
+     background: black;
+     border-radius: 20px;
 }
 
 .conFomu input{
@@ -85,7 +93,7 @@ label{
     background: transparent;
     border: none;
     outline: none;
-    border: solid silver;
+    border: solid rgb(255, 255, 255);
     border-radius: 20px;
     color: #fff;
     padding: 20px 45px 20px 20px;
@@ -94,18 +102,19 @@ label{
 
 .conFomu input::placeholder{
     color: #fff;
+    font-size: 20px;
     
     
 }
 
+
+
 .cont2 label input{
     accent-color: #fff;
-    margin-right: 5px;
-  
-   
-    
+    display: flex;  
     
 }
+
 
 .btnRealizarPedido{
     width: 100%;
@@ -121,9 +130,3 @@ label{
     font-weight: 600;
 }
 
-@media(min-width:600px){
-    .imgFomulario{
-        width: 50px;
-        height: 40px;
-    }
-}
