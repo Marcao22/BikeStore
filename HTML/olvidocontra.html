@@ -7,6 +7,7 @@
     <title>Olvidaste tu contraseña?</title>
     <link rel="stylesheet" href="..//CSS/olvidocontra.css">
     <link rel="icon" href="/IMG/logoredondeado.png">
+    <link rel="stylesheet" href="/JAVASCRIPT/olvidocontra.js">
 </head>
 
 <body>
@@ -25,18 +26,49 @@
                 <div class="alineartext">
                     <h2 clas>Recuperacion de la cuenta</h2>
                     <label>Recupera tu cuenta de Bike Store</label>
-                    <input type="text" class="contenedor" placeholder="Correo electronico">
+                    <input type="email" class="contenedor" placeholder="Correo electronico">
                     <label><u class="contenedor">Te enviaremos un codigo a tu correo o telefono</u></label>
                 </div>
                 <div class="btn">
-                    <a href="codigo.html"><button type="button">Siguente</button></a>
+                    <a href="codigo.html"><button type="button" id="btnSubmit" disabled>Siguente</button></a>
 
                 </div>
-            </form>
-        </div>
 
-    </main>
+                <script>
+                    const btnSubmit = document.getElementById('btnSubmit');
 
+                    const form = document.querySelector('.formulario');
+                    const emailInput = document.querySelector('.formulario input[type="email"]');
+                    const errorMessage = document.createElement('div');
 
+                    form.appendChild(errorMessage);
 
-</html>
+                    form.addEventListener('input', () => {
+                        if (emailInput.value.trim() === '') {
+                            btnSubmit.disabled = true;
+                            errorMessage.textContent = '';
+                            return;
+                        }
+
+                        if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput.value)) {
+                            btnSubmit.disabled = true;
+                            errorMessage.textContent = 'Por favor ingresa un correo electronico valido.';
+                            return;
+                        }
+
+                        btnSubmit.disabled = false;
+                        errorMessage.textContent = '';
+                    });
+
+                    form.addEventListener('submit', (event) => {
+                        event.preventDefault();
+
+                        if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput.value)) {
+                            errorMessage.textContent = 'Por favor ingresa un correo electronico valido.';
+                            return;
+                        }
+
+                        // If all checks pass, submit the form
+                        form.submit();
+                    });
+                </script>

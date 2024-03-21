@@ -19,6 +19,7 @@
                     <h1 class="texto">Pedaleamos para servirle</h1>
                 </div>
             </div>
+            <div id="error-message" class="error-message"></div>
         </aside>
         <div class="upper-form">
             <form action="" class="formulario">
@@ -37,3 +38,41 @@
 
 
 </html>
+
+
+<script>
+    // Get the code input and submit button
+const codeInput = document.querySelector('.formulario input[type="text"]');
+const btnSubmit = document.querySelector('.formulario button[type="button"]');
+const errorMessage = document.getElementById('error-message');
+
+// Add an event listener to the code input
+codeInput.addEventListener('input', (event) => {
+  const code = codeInput.value.trim();
+
+  if (code.length !== 6) {
+    btnSubmit.disabled = true;
+    errorMessage.textContent = '';
+    return;
+  }
+
+  btnSubmit.disabled = false;
+  errorMessage.textContent = '';
+});
+
+// Add an event listener to the form
+const form = document.querySelector('.formulario');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const code = codeInput.value.trim();
+
+  if (code.length !== 6) {
+    errorMessage.textContent = 'Please enter a 6-digit code.';
+    return;
+  }
+
+  // If the code is valid, submit the form
+  form.submit();
+});
+</script>
